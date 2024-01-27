@@ -1,7 +1,6 @@
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&display=swap');
 :root{
     --poppins :  'Poppins', sans-serif;
     --orange :#FF9600;
@@ -53,10 +52,11 @@ body , html {
 }
 
 
-.nav1_right_box_partition p{
+.nav1_right_box p{
     /* background-color: #69707c; */
     width:10vw;
     margin: 0;
     font-family: var(--poppins);
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 13px;
 }
