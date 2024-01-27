@@ -1,0 +1,62 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+:root{
+    --poppins :  'Poppins', sans-serif;
+    --orange :#FF9600;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html {
+    width: 100%;
+    background-color: aquamarine;
+}
+
+
+/* NAV 1 STYLING STARTS HERE  */
+
+#nav1{
+    background-color:#F4F6F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav_logo{
+    font-family: var(--poppins);
+    color: #061E4C;
+    padding: 1% 8% ;
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.nav1_Right{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+.nav1_right_box{
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    align-items: center;
+}
+.nav1_right_box i {
+    font-size:30px;
+    color:var(--orange) ;
+}
+
+
+.nav1_right_box_partition p{
+    /* background-color: #69707c; */
+    width:10vw;
+    margin: 0;
+    font-family: var(--poppins);
+    font-weight: 300;
+}
