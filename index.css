@@ -1,17 +1,24 @@
-
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,500&display=swap');
-:root{
-    --poppins :  'Poppins', sans-serif;
-    --orange :#FF9600;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Open+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --orange: #FF9600;
+    --plex: 'IBM Plex Sans', sans-serif;
+    --open: 'Open Sans', sans-serif;
+    --ligt_green : #c8d4c3 ;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body , html {
+
+body,
+html {
     width: 100%;
     /* background-color: aquamarine; */
 }
@@ -19,81 +26,126 @@ body , html {
 
 /* NAV 1 STYLING STARTS HERE  */
 
-#nav1{
-    background-color:#f0f3f8;
+#nav1 {
+    background-color: #e0e4ec;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#nav_logo{
-    font-family: var(--poppins);
+
+#nav_logo {
+    font-family: var(--open);
     color: #061E4C;
-    padding: 1% 8% ;
-    font-weight: 900;
+    padding: 1% 8%;
+    font-weight: 700;
     font-size: 1.8rem;
     text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+
 }
 
-.nav1_Right{
+.nav1_Right {
     width: 40%;
     display: flex;
     justify-content: space-evenly;
     gap: 10%;
 }
-.nav1_right_box{
+
+.nav1_right_box {
     display: flex;
     gap: 8%;
     justify-content: center;
     align-items: center;
 }
+
 .nav1_right_box i {
-    font-size:30px;
-    color:var(--orange) ;
+    font-size: 30px;
+    color: var(--orange);
 }
 
 
-.nav1_right_box p{
+.nav1_right_box p {
     /* background-color: #69707c; */
-    width:10vw;
+    width: 10vw;
     margin: 0;
     font-family: var(--poppins);
     font-weight: 600;
     font-size: 13px;
 }
-.nav2{
+
+.nav2 {
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    margin-bottom: 0;
     /* background-color: #FF9600; */
 }
-.nav2 ul{
+
+
+.nav2 ul {
     display: flex;
-    /* background-color: #061E4C; */
+    background-color: transparent;
     width: 100%;
     align-items: center;
-    justify-content:flex-end ;
+    justify-content: flex-end;
     height: 100%;
     gap: 5%;
     padding-right: 10%;
     box-sizing: border-box;
+    margin-bottom: 0;
+    position: relative;
 }
 
-.nav2_listItem{
+nav2_ul::after{
+    content: "heelo";
+    background-color: #FF9600;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.nav2_listItem {
     color: rgb(132, 0, 255);
     list-style-type: none;
     text-decoration: none;
-    padding:  2% 0%;
+    padding: 1% 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-family: var(--poppins);
     cursor: pointer;
 }
-.nav2_listItem:hover{
-    color:#1A73E8 ;
+
+.nav2_listItem:hover {
+    /* color: #1A73E8; */
+   color: #303d2c;
+
 }
-.nav2_button{
+
+.nav2_button {
+    font-family: var(--open);
     box-sizing: border-box;
-    padding: 9px 12px; 
+    padding: 9px 12px;
+    border-radius: 30px;
+    background-color: #c8d4c3;
 }
-#nav2_listItem3{
+
+#nav2_listItem3 {
     position: relative;
+}
+
+
+/* NAV BAR 2 STYLING  ENDS  HERE ANS SECTION 1 STSARTS HERE  */
+
+
+.section1 {
+    background: url("images/section\ 1.jpg") no-repeat top;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
 }
