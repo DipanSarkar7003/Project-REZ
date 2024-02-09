@@ -9,6 +9,7 @@
     --plex: 'IBM Plex Sans', sans-serif;
     --open: 'Open Sans', sans-serif;
     --ligt_green : #c8d4c3 ;
+    --dark_green : #303d2c;
 }
 
 * {
@@ -34,12 +35,12 @@ html {
 }
 
 #nav_logo {
-    font-family: var(--open);
-    color: #061E4C;
+    /* font-family: var(--open); */
+    color: var(--dark_green);
     padding: 1% 8%;
     font-weight: 700;
     font-size: 1.8rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
     margin-bottom: 0;
 
@@ -61,7 +62,7 @@ html {
 
 .nav1_right_box i {
     font-size: 30px;
-    color: var(--orange);
+    color: var(--dark_green);
 }
 
 
@@ -91,7 +92,7 @@ html {
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    gap: 5%;
+    gap: 2%;
     padding-right: 10%;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -109,28 +110,35 @@ nav2_ul::after{
 
 
 .nav2_listItem {
-    color: rgb(132, 0, 255);
+    color: var(--dark_green);
+    font-size: large;
+    text-decoration: overline;
     list-style-type: none;
     text-decoration: none;
     padding: 1% 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    font-family: var(--poppins);
+    font-weight: 400;
+    /* font-family: var(--poppins); */
     cursor: pointer;
 }
 
 .nav2_listItem:hover {
     /* color: #1A73E8; */
    color: #303d2c;
+   text-decoration: overline;
+   transition: all ease 1s;
 
 }
 
 .nav2_button {
     font-family: var(--open);
     box-sizing: border-box;
-    padding: 9px 12px;
+    padding: 10px 15px;
     border-radius: 30px;
-    background-color: #c8d4c3;
+    background-color: var(--dark_green);
+    color: aliceblue;
+    text-transform: uppercase;
 }
 
 #nav2_listItem3 {
@@ -144,8 +152,35 @@ nav2_ul::after{
 .section1 {
     background: url("images/section\ 1.jpg") no-repeat top;
     background-size: cover;
-    height: 90vh;
+   height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.section1_text{
+    max-width: 50%;
+    margin-top: 15%;
+}
+
+.section1_text_h1{
+    font-size: 4vw;
+    color: aliceblue;
+}
+.section1Button{
+    padding: 1vw 1vw;
+    border: none;
+    border-radius: 30px;
+    background-color: #303d2c;
+    color: aliceblue ;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-transform: uppercase;
+   
+}
+
+.rupesh_da_quote{
+    color: aliceblue;
+    font-size: larger;
 }
