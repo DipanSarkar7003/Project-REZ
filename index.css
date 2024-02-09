@@ -184,3 +184,20 @@ nav2_ul::after{
     color: aliceblue;
     font-size: larger;
 }
+
+
+/* SECTION 2 STYLING STARTS HERE  */
+.section2{
+    display: flex;
+    overflow: hidden;
+}
+.section2_box{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.section2_box_image{
+    width: 3vw;
+}
+
