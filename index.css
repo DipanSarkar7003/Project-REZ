@@ -8,8 +8,8 @@
     --orange: #FF9600;
     --plex: 'IBM Plex Sans', sans-serif;
     --open: 'Open Sans', sans-serif;
-    --ligt_green : #c8d4c3 ;
-    --dark_green : #303d2c;
+    --ligt_green: #c8d4c3;
+    --dark_green: #303d2c;
 }
 
 * {
@@ -99,7 +99,7 @@ html {
     position: relative;
 }
 
-nav2_ul::after{
+nav2_ul::after {
     content: "heelo";
     background-color: #FF9600;
     position: absolute;
@@ -125,9 +125,9 @@ nav2_ul::after{
 
 .nav2_listItem:hover {
     /* color: #1A73E8; */
-   color: #303d2c;
-   text-decoration: overline;
-   transition: all ease 1s;
+    color: #303d2c;
+    text-decoration: overline;
+    transition: all ease 1s;
 
 }
 
@@ -152,52 +152,66 @@ nav2_ul::after{
 .section1 {
     background: url("images/section\ 1.jpg") no-repeat top;
     background-size: cover;
-   height: 100vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.section1_text{
+
+.section1_text {
     max-width: 50%;
     margin-top: 15%;
 }
 
-.section1_text_h1{
+.section1_text_h1 {
     font-size: 4vw;
     color: aliceblue;
 }
-.section1Button{
+
+.section1Button {
     padding: 1vw 1vw;
     border: none;
     border-radius: 30px;
     background-color: #303d2c;
-    color: aliceblue ;
+    color: aliceblue;
     margin-bottom: 5%;
     margin-top: 5%;
     text-transform: uppercase;
-   
+
 }
 
-.rupesh_da_quote{
+.rupesh_da_quote {
     color: aliceblue;
     font-size: larger;
 }
 
 
 /* SECTION 2 STYLING STARTS HERE  */
-.section2{
+.section2 {
     display: flex;
     overflow: hidden;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin: 5% 5%;
 }
-.section2_box{
+
+.section2_box {
     display: flex;
     align-items: center;
-    width: auto;
+    gap: 7%;
+    width: 25%;
+    padding: 0 5%;
 }
 
-.section2_box_image{
-    width: 3vw;
+.section2_box_image {
+    width: 5vw;
 }
 
+#section2_middle_box {
+    border-left: 1px solid var(--dark_green);
+    border-right: 1px solid var(--dark_green);
+
+}
