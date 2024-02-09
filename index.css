@@ -196,22 +196,104 @@ nav2_ul::after {
     margin-top: 5%;
     margin-bottom: 5%;
     margin: 5% 5%;
+
+
 }
 
 .section2_box {
     display: flex;
     align-items: center;
     gap: 7%;
-    width: 25%;
+    width: 33%;
     padding: 0 5%;
+    position: relative;
+    /* text-align: right; */
+}
+
+.section2_text_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.section2_text_part a {
+    /* position: absolute; */
+    /* bottom: 0; */
+    text-decoration: none;
+    /* background-color: #FF9600; */
+}
+
+.headding {
+    font-size: 2.5vw;
+}
+
+.description {
+    font-size: large;
 }
 
 .section2_box_image {
-    width: 5vw;
+    width: 7vw;
 }
 
 #section2_middle_box {
     border-left: 1px solid var(--dark_green);
     border-right: 1px solid var(--dark_green);
 
+}
+
+
+/* SECTION2 STYNING ENDS AND SECTION 3 STYLING STARTS HERE  */
+
+.section3 {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    gap: 2%;
+    background-color: #dee5db;
+    padding: 6% 0;
+}
+
+#section3_box1 {
+    background: url(images/repair\ 2.png) no-repeat center;
+    background-size: cover;
+    height: 40vh;
+    width: 50vw;
+
+}
+
+#section3_box2 {
+    background: url(images/repair3.jpg) no-repeat center;
+    background-size: cover;
+    height: 40vh;
+    width: 50vw;
+
+
+}
+
+.section3_box_textPart {
+    background-color: #fff;
+    /* clip-path: polygon(0 0, 84% 0, 62% 54%, 44% 100%, 0 100%, 0% 50%); */
+    clip-path: polygon(0 0, 58% 0, 43% 55%, 31% 100%, 0 100%, 0% 50%);
+    padding: 2% 4%;
+    width: auto;
+    height: 100%;
+   
+
+}
+.section3_box_textPart h1{
+    font-size: 2.1vw;
+}
+
+.section3_box_textPart_paragraph {
+    width: 40%;
+    margin: 5% 0;
+    font-size: 1.2vw;
+}
+
+.section3_box_textPart_button {
+    padding: 2% 5%;
+    background-color: var(--dark_green);
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    margin-top: 3%;
 }
