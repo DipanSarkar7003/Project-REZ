@@ -397,14 +397,20 @@ nav2_ul::after {
 }
 .section6_animation_wheel{
     width: 60px;
-    animation: rotation;
-}
 
-@keyframes rotation {
-    from {rotate: 0deg;}
-    to {top: 360deg;}
-    
+    animation: rotation 5s linear infinite;
 }
+  
+ @keyframes rotation {
+   
+    100% {transform: rotate(360deg);
+    transition: all ease;}
+    
+} 
+
+/* @keyframes mymove {
+  50% {transform: rotate(180deg);}
+} */
 
 .section6_hero_box{
     max-height: 100vh;
@@ -424,6 +430,9 @@ nav2_ul::after {
     
     color: aliceblue;
 }
-.section6_box:hover{
+/* .section6_box:hover{
  border: 1px solid aliceblue;
-}
+ transition: all ease 0.5s;
+ text-align: center;
+ padding:  5% 0;
+} */
