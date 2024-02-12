@@ -325,7 +325,7 @@ nav2_ul::after {
 
 
 .section5 {
-    background-color: #74926a;
+    background-color: var(--dark_green);
     position: relative;
     width: 100vw;
 
@@ -339,7 +339,7 @@ nav2_ul::after {
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr;
+    grid-row:auto auto;
     margin: auto;
     /* background-color: aqua; */
     position: absolute;
@@ -350,7 +350,7 @@ nav2_ul::after {
 
 .section5_box {
     background-color: #fff;
-    padding: 3% 5%;
+    padding: 5% 5%;
     border: 1px solid #BCC2CF;
 }
 
@@ -366,8 +366,11 @@ nav2_ul::after {
 }
 
 .section5_box_paragraphText {
-    width: 70%;
+    width: 90%;
     font-size: 1vw;
+    margin-bottom: 10%;
+    margin-top: 7%;
+    line-height: 1.6;
     /* font-weight: bold; */
 
 }
@@ -378,5 +381,49 @@ nav2_ul::after {
     font-size: .9vw;
     color: #303d2c;
     padding-bottom: 7% ;
+    cursor: pointer;
 }
 
+/* SECTION 5 STYNING ENDS AND SECTION 6 STYLING STARTS HERE  */
+.section6{
+    background-color: var(--dark_green);
+}
+.section6_headding{
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 2.7 vw;
+    margin-bottom: 5%;
+}
+.section6_animation_wheel{
+    width: 60px;
+    animation: rotation;
+}
+
+@keyframes rotation {
+    from {rotate: 0deg;}
+    to {top: 360deg;}
+    
+}
+
+.section6_hero_box{
+    max-height: 100vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row:auto auto;
+    margin: auto;
+ 
+
+}
+.section6_box {
+    /* background-color: #fff; */
+    padding-left:  10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    color: aliceblue;
+}
+.section6_box:hover{
+ border: 1px solid aliceblue;
+}
