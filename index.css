@@ -10,6 +10,7 @@
     --open: 'Open Sans', sans-serif;
     --ligt_green: #c8d4c3;
     --dark_green: #303d2c;
+    --grey: #686868;
 }
 
 * {
@@ -484,10 +485,38 @@ nav2_ul::after {
     font-size: 3.5vw;
 }
 .section7_hero_box_textPart_paragraph{
-    padding-left: 20%;
+    padding-left: 22%;
     width: 80%;
     padding-top: 3% ;
     font-size: 1.5vw;
     line-height:2.3vw;
     font-weight: 300;
+}
+.read_more{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: left;
+    padding-right: 20%;
+
+}
+
+.number_countPart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vw;
+    font-family: var(--open);
+}
+.number_countPart_box_number{
+    font-size: 5vw;
+    font-weight: 900;
+
+}
+
+.number_countPart_box_p{
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: var(--grey);
 }
