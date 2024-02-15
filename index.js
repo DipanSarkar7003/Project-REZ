@@ -25,6 +25,7 @@ let hours = new Date().getHours()
 
 let minutes = new Date().getMinutes()
 let actual_time = `${hours}:${minutes}`;
+console.log(actual_time)
 
 time_element.textContent = (`${day} , ${actual_time}`)
 
