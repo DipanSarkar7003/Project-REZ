@@ -186,7 +186,7 @@ html {
 .section1 {
     width: 100vw;
     overflow: hidden;
-    background: url("images/section\ 1.jpg") no-repeat top;
+    background: url("images/section1_background.jpg") no-repeat top;
     background-size: cover;
     height: 90vh;
     width: 100vw;
@@ -203,7 +203,7 @@ html {
    justify-content: center;
    align-items: center;
    text-align: center;
-    background-color:rgba(0.1 , 0 , 0 , 0.55);
+    background-color:rgba(0.0 , 0 , 0 , 0.55);
     height: 100%;
     width: 100%;
     backdrop-filter: blur(2px);
