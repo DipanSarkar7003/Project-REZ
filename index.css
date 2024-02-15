@@ -28,6 +28,19 @@ html {
     /* background-color: aquamarine; */
 }
 
+.hidden{
+    display:hidden;
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+.shown{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all ease 0.5s;
+}
+
+
 
 /* NAV 1 STYLING STARTS HERE  */
 
@@ -159,7 +172,7 @@ nav2_ul::after {
     overflow: hidden;
     background: url("images/section\ 1.jpg") no-repeat top;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -264,6 +277,7 @@ nav2_ul::after {
     background-size: cover;
     height: 40vh;
     width: 50vw;
+    transition-delay:0.3s ;
 
 }
 
@@ -272,7 +286,7 @@ nav2_ul::after {
     background-size: cover;
     height: 40vh;
     width: 50vw;
-
+    transition-delay:0.5s ;
 
 }
 
