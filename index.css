@@ -29,13 +29,13 @@ html {
 
 }
 
-.hidden{
-    display:hidden;
+.hidden {
+    display: hidden;
     opacity: 0;
     transform: translateY(200px);
 }
 
-.shown{
+.shown {
     opacity: 1;
     transform: translateY(0px);
     transition: all ease 0.5s;
@@ -62,6 +62,7 @@ html {
     /* text-decoration: underline; */
     cursor: pointer;
     margin-bottom: 0;
+    text-wrap: nowrap;
 
 }
 
@@ -79,20 +80,23 @@ html {
     align-items: center;
 }
 
-#time , #open_status{
+#time,
+#open_status {
     font-weight: 200;
     text-transform: uppercase;
     font-size: 1vw;
 }
-#address{
+
+#address {
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 1vw;  
+    font-size: 1vw;
     cursor: pointer;
     color: var(--dark_green);
     text-decoration: none;
 
 }
+
 .nav1_right_box i {
     font-size: 2vw;
     color: var(--dark_green);
@@ -119,6 +123,20 @@ html {
     /* background-color: #FF9600; */
 }
 
+#nav_logo2 {
+    /* font-family: var(--open); */
+    color: var(--dark_green);
+    padding: 1% 8%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+    display: none;
+
+}
+
 
 .nav2 ul {
     display: flex;
@@ -131,11 +149,11 @@ html {
     padding-right: 10%;
     box-sizing: border-box;
     margin-bottom: 0;
-   
+
 }
 
-.nav2_three_bar{
-    font-size:0;
+.nav2_three_bar {
+    font-size: 0;
     display: none;
 }
 
@@ -144,7 +162,7 @@ html {
 
 .nav2_listItem {
     color: var(--dark_green);
-    font-size: large;
+    font-size: 1.4vw;
     text-decoration: overline;
     list-style-type: none;
     text-decoration: none;
@@ -154,6 +172,7 @@ html {
     font-weight: 400;
     /* font-family: var(--poppins); */
     cursor: pointer;
+    text-wrap: nowrap;
 }
 
 .nav2_listItem:hover {
@@ -166,6 +185,7 @@ html {
 
 .nav2_button {
     border: none;
+    font-size: 1.1vw;
     font-family: var(--open);
     box-sizing: border-box;
     padding: 10px 15px;
@@ -173,6 +193,7 @@ html {
     background-color: var(--dark_green);
     color: aliceblue;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 #nav2_listItem3 {
@@ -194,21 +215,21 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-  
+
 }
 
 .section1_text {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-    background-color:rgba(0.0 , 0 , 0 , 0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0.0, 0, 0, 0.55);
     height: 100%;
     width: 100%;
     backdrop-filter: blur(2px);
-   
-    
+
+
 }
 
 .section1_text_h1 {
@@ -235,7 +256,7 @@ html {
     max-width: 50%;
 }
 
-#rupesh_da{
+#rupesh_da {
     color: var(--ligt_green);
 }
 
@@ -300,24 +321,25 @@ html {
     margin: auto;
     gap: 2%;
     background-color: #dee5db;
-    padding: 6% 0;
+    padding: 4% 2%;
+    align-items: center;
 }
 
 #section3_box1 {
     background: url(images/repair\ 2.png) no-repeat center;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
     width: 50vw;
-    transition-delay:0.3s ;
+    transition-delay: 0.3s;
 
 }
 
 #section3_box2 {
     background: url(images/repair3.jpg) no-repeat center;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
     width: 50vw;
-    transition-delay:0.5s ;
+    transition-delay: 0.5s;
 
 }
 
@@ -364,8 +386,13 @@ html {
     width: 50%;
     margin: auto;
     gap: 1vw;
-    padding-top: 10%;
+    padding-top: 5vw;
     padding-bottom: 20%;
+}
+
+.section4 h1 {
+    font-size: 4vw;
+    font-weight: 700;
 }
 
 
@@ -375,7 +402,7 @@ html {
 .section5 {
     background-color: var(--dark_green);
     position: relative;
-    width: 100vw;
+    width: 103%;
 
     height: 60vh;
 
@@ -384,7 +411,7 @@ html {
 
 .section5_hero_box {
     max-height: 100vh;
-    width: 70%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: auto auto;
@@ -392,7 +419,7 @@ html {
     /* background-color: aqua; */
     position: absolute;
     top: -40%;
-    left: calc(30%/2);
+    left: calc(10%/2);
 
 }
 
@@ -409,14 +436,14 @@ html {
 
 .section5_box_headdingText {
     text-transform: uppercase;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: bolder;
 }
 
 .section5_box_paragraphText {
     width: 90%;
-    font-size: 1vw;
-    margin-bottom: 10%;
+    font-size: 1.2vw;
+    margin-bottom: 8%;
     margin-top: 7%;
     line-height: 1.6;
     /* font-weight: bold; */
@@ -435,6 +462,10 @@ html {
 /* SECTION 5 STYNING ENDS AND SECTION 6 STYLING STARTS HERE  */
 .section6 {
     background-color: var(--dark_green);
+    width: 103%;
+    height: auto;
+    padding-top: 170px;
+    border: 1px solid red;
 }
 
 .section6_headding {
@@ -466,13 +497,18 @@ html {
 
 .section6_hero_box {
     max-height: 100vh;
-    width: 70%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: auto auto;
     margin: auto;
 
 
+}
+
+.section6_box_icon {
+    width: 15%;
+    margin-bottom: 5%;
 }
 
 .section6_box {
@@ -483,14 +519,6 @@ html {
 
     color: aliceblue;
 }
-
-/* .section6_box:hover{
- border: 1px solid aliceblue;
- transition: all ease 0.5s;
- text-align: center;
- padding:  5% 0;
-} */
-
 
 /* SECTION 6 STYNING ENDS AND SECTION 7 STYLING STARTS HERE  */
 .section7_hero_box {
@@ -515,14 +543,14 @@ html {
     align-items: center;
     position: absolute;
     bottom: 8%;
-    right: 5%;
+    right: 0%;
     clip-path: polygon(33% 0, 100% 0, 100% 56%, 100% 99%, 11% 100%, 22% 52%);
     background-color: var(--dark_green);
     color: aliceblue;
     height: 80%;
-    width: 50%;
+    width: 60%;
     transform: rotate(0.6deg);
-  
+
 }
 
 .section7_hero_box_textPart_headding {
@@ -531,24 +559,26 @@ html {
     text-align: left;
     font-size: 3.5vw;
 }
-.section7_hero_box_textPart_paragraph{
-    padding-left: 22%;
+
+.section7_hero_box_textPart_paragraph {
+    padding-left: 25%;
     width: 80%;
-    padding-top: 3% ;
+    padding-top: 3%;
     font-size: 1.5vw;
-    line-height:2.3vw;
+    line-height: 2.3vw;
     font-weight: 300;
 }
-.read_more{
+
+.read_more {
     text-decoration: none;
     color: aliceblue;
     font-weight: bolder;
     text-align: left;
-    padding-right: 20%;
+    padding-right: 15%;
 
 }
 
-.number_countPart{
+.number_countPart {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -556,124 +586,229 @@ html {
     margin-bottom: 5vw;
     font-family: var(--open);
 }
-.number_countPart_box_number{
+
+.number_countPart_box_number {
     font-size: 5vw;
     font-weight: 900;
 
 }
-.number_countPart_box_number span{
-text-align: left;
+
+.number_countPart_box_number span {
+    text-align: left;
 }
 
-.number_countPart_box_p{
+.number_countPart_box_p {
     font-size: 1.5vw;
     font-weight: 900;
     color: var(--grey);
 }
-#number_countPart_box1{
+
+#number_countPart_box1 {
     transition-delay: .1s;
 }
-#number_countPart_box2{
+
+#number_countPart_box2 {
     transition-delay: .2s;
 }
-#number_countPart_box3{
+
+#number_countPart_box3 {
     transition-delay: .3s;
-    
+
 }
 
 /* SECTION 7 STYLING ENDS HERE  */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-    body , html {
+
+    body,
+    html {
         background-color: aqua;
-    } 
+    }
 
     /* NAV BAR  STYLING FOR 1200PX  */
-    
-    .nav1_right_box i{
+
+    .nav1_right_box i {
         font-size: 2.5VW;
     }
-    #time , #open_status{
-        
+
+    #time,
+    #open_status {
+
         font-size: 1.4vw;
         width: auto;
         text-wrap: nowrap;
     }
-    #address{
+
+    #address {
         font-size: 1.4vw;
         width: auto;
         text-wrap: nowrap;
     }
 
+    .nav2_listItem {
+        font-size: 1.7vw;
+    }
 
-    /* NAV section2  STYLING FOR 1200PX  */
+    .nav2_button {
+        font-size: 1.1vw;
+    }
 
-    .headding{
+
+    /* section2  STYLING FOR 1200PX  */
+
+    .headding {
         font-size: 3vw;
     }
+
     .description {
         font-size: 1.8vw;
     }
 
 
-       /* NAV section3  STYLING FOR 1200PX  */
 
-       .section3_box_textPart{
-        padding: 10% 3%;
-        
-       
-       }
+    /*  section3  STYLING FOR 1200PX  */
 
-       .section3_box_textPart h1 {
+    .section3 {
+        width: 93%;
+        height: 70vh;
+        padding: 5% 3%;
+    }
+
+    #section3_box1 {
+
+        height: 50vh;
+        width: 50vw;
+        transition-delay: 0.3s;
+
+    }
+
+    #section3_box2 {
+
+        height: 50vh;
+        width: 50vw;
+        transition-delay: 0.5s;
+
+    }
+
+    .section3_box_textPart {
+        padding: 6% 3%;
+
+
+    }
+
+    .section3_box_textPart h1 {
         font-size: 2.3vw;
         text-wrap: wrap;
         max-width: 80%;
     }
-    .section3_box_textPart_paragraph{
-        font-size: 1.5vw;
+
+    .section3_box_textPart_paragraph {
+        font-size: 1.4vw;
     }
 
+    /* section4  STYLING FOR 1200PX  */
+
+    .section4 {
+        padding-bottom: 5vh;
+    }
+
+    /* section5  STYLING FOR 1200PX  */
+    .section5 {
+        height: 100vh;
+    }
+
+    .section5_hero_box {
+        height: 100%;
+        max-height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: auto auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  
+
+    /* section 6  STYLING FOR 1200PX  */
+    .section6 {
+        height: 100vh;
+        padding-top: 5vw;
+    }
+    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and below) */
 @media only screen and (max-width: 992px) {
-    body , html {
+
+    body,
+    html {
         background-color: rgb(26, 105, 207);
-    } 
+    }
+
+    
+
+     /* section 6  STYLING FOR 992PX  */
+     .section6 {
+        /* height: 100vh; */
+        height: auto;
+        /* padding-top: 10vh; */
+        padding-top: 30px;
+    }
+
+
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and below) */
 @media only screen and (max-width: 768px) {
-    body , html {
+
+    body,
+    html {
         background-color: rgb(187, 27, 219);
-    } 
+    }
+
+
+    #nav1 {
+        display: none;
+    }
+
+    #nav_logo2{
+
+    display: block;
+    }
+
+    .nav2 ul :nth-child(-n+6){
+        display: none;
+    }
+    .nav2_three_bar {
+        font-size: 3vw;
+        display: block;
+    }
+
+
+
+
+    .section6_hero_box {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-body , html {
+
+    body,
+    html {
         background-color: rgb(165, 253, 0);
-    } 
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 480px) {
-    body , html {
-        background-color: rgb(219, 27, 27);
-    } 
-}
 
+    body,
+    html {
+        background-color: rgb(219, 27, 27);
+    }
+}
