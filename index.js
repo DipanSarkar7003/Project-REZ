@@ -11,6 +11,7 @@ const count_part = document.querySelector(".number_countPart");
 let activate = true;
 const time_element = document.querySelector("#time");
 const open_status = document.querySelector("#open_status")
+const fadeed_elements = document.querySelectorAll(".faded")
 
 // WO NAV BAR KA TIMING YAHA SE UPDATE HOGA 
 
@@ -29,12 +30,14 @@ console.log(actual_time)
 
 time_element.textContent = (`${day} , ${actual_time}`)
 
-if(!date==4 && hours>=8 && hours<=21){
-    open_status.textContent = "we are open now"
+if (date == 4 || hours <= 8 ||hours >= 21) {
+    open_status.textContent = " sorry closed now"
 }
-else{
-    open_status.textContent = "sorry closed now"
+else {
+    open_status.textContent = " we are open now"
 }
+
+console.log(date)
 
 
 
@@ -58,6 +61,40 @@ window.addEventListener("scroll", () => {
         }
     })
 
+
+// FADE WALA ANIMATION YAHA BANA RAHA HU 
+
+
+
+window.addEventListener('scroll', () => {
+    fadeed_elements.forEach((elem) => {
+        let fadeed_element_top = elem.getBoundingClientRect().top.toFixed()
+        let target = device_height - fadeed_element_top
+
+        if (target >= 20) {
+            elem.classList.remove("faded")
+            elem.classList.add(".nonfaded")
+           
+        }
+        else {
+            elem.classList.remove("nonfaded")
+            elem.classList.add(".faded")
+            
+        }
+       
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
     let count_part_top = count_part.getBoundingClientRect().top.toFixed()
     let count_target = device_height - count_part_top;
 
@@ -69,7 +106,6 @@ window.addEventListener("scroll", () => {
         nums.forEach((num) => {
             let start_val = 0;
             let end_val = parseInt(num.getAttribute("value_count"))
-            let id = num.getAttribute("id")
             let interval = Math.floor(5000 / end_val)
             let counter = setInterval(
                 () => {
@@ -99,6 +135,35 @@ window.addEventListener("scroll", () => {
     }
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const observer = new IntersectionObserver((e)=>{
 // e.forEach(()=>{
