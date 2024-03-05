@@ -29,8 +29,10 @@ html {
 
 }
 
+/* SCROLL ANIMATION WALA CLASS YAHA HOGA  */
+
 .hidden {
-    display: hidden;
+    /* display: hidden; */
     opacity: 0;
     transform: translateY(200px);
 }
@@ -41,6 +43,17 @@ html {
     transition: all ease 0.5s;
 }
 
+.faded{
+    opacity: 0;
+    transform: translateY(200px);
+   
+}
+
+.nonfaded{
+    transition: all ease 2s;
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 
 /* NAV 1 STYLING STARTS HERE  */
@@ -464,8 +477,8 @@ html {
     background-color: var(--dark_green);
     width: 103%;
     height: auto;
-    padding-top: 170px;
-    border: 1px solid red;
+    padding-top: 160px;
+   
 }
 
 .section6_headding {
@@ -617,6 +630,78 @@ html {
 }
 
 /* SECTION 7 STYLING ENDS HERE  */
+/* SECTION 8 STYLING STARTS HERE  */
+.section8{
+    width: 103%;
+    /* background-color: var(--ligt_green); */
+}
+
+.section_headding_part{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_headding_part h1 {
+    font-size: 4vw;
+    text-transform: uppercase ;
+    padding: 3vh 0;
+}
+.section_headding_part p {
+    width: 87%;
+    text-align: center;
+}
+
+.section8_hero_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    justify-content: space-evenly;
+   /* background-color: var(--ligt_green); */
+    gap: auto;
+    width: 80%;
+    margin: auto;
+ 
+}
+
+.section8_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: var(--ligt_green);
+    border-radius: 20px;
+    height: auto;
+    
+}
+.section8_box img{
+    width: 15%;
+    padding: 3% 0;
+    
+
+}
+
+.five_star{
+    color: rgb(255, 145, 0);
+}
+.double_quote {
+   color: var(--dark_green);
+   font-size:5vw;
+}
+.testimonial{
+    font-size: 1.1vw;
+    width: 80%;
+    line-height: 2vw;
+}
+.name{
+    font-size: 1.2vw;
+    padding: 3% 0;
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
@@ -788,7 +873,10 @@ html {
 
 
 
-
+    .section5_hero_box{
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
     .section6_hero_box {
         grid-template-columns: 1fr 1fr;
         height: auto;
