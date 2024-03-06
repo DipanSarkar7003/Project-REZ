@@ -11,3 +11,29 @@
         left: 0; }
 
      */
+
+
+
+     /* section 6  STYLING FOR 1200PX  */
+    /* .section6 {
+        max-height: 100vh;
+        padding-top: 5vw;
+        position: static;
+        padding-top: 0;
+        height:auto;
+        margin-bottom: 0;
+        align-self: center;
+        justify-self: center;
+       
+    } */
+
+
+
+
+      /* section 6  STYLING FOR 992PX  */
+    .section6 {
+        /* height: 100vh; */
+        height: auto;
+        /* padding-top: 10vh; */
+        padding-top: 30px;
+    }

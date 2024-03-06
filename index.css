@@ -227,6 +227,7 @@ html {
     background: url("images/section1_background.jpg") no-repeat top;
     background-size: cover;
     height: 90vh;
+    min-height: 50vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -242,7 +243,7 @@ html {
     align-items: center;
     text-align: center;
     background-color: rgba(0.0, 0, 0, 0.55);
-    height: 100%;
+   height: 100%;
     width: 100%;
     backdrop-filter: blur(2px);
 
@@ -327,8 +328,8 @@ html {
 }
 
 #section2_middle_box {
-    border-left: 1px solid var(--dark_green);
-    border-right: 1px solid var(--dark_green);
+    border-left: 1px solid var(--border_grey);
+    border-right: 1px solid var(--border_grey);
 
 }
 
@@ -430,13 +431,12 @@ html {
 }
 
 .section5_hero_box {
-    max-height: 100vh;
+    max-height: 100%;
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: auto auto;
     margin: auto;
-    /* background-color: aqua; */
     position: absolute;
     top: -40%;
     left: calc(10%/2);
@@ -445,9 +445,10 @@ html {
 
 .section5_box {
     background-color: #fff;
-    padding: 5% 5%;
-    border: 1px solid #BCC2CF;
+    padding: 5% 7%;
+    border: 1px solid var(--border_grey);
 }
+
 
 .section5_box_icon {
     width: 20%;
@@ -456,8 +457,9 @@ html {
 
 .section5_box_headdingText {
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     font-weight: bolder;
+    font-family: var(--paragraph_fonts);
 }
 
 .section5_box_paragraphText {
@@ -465,15 +467,15 @@ html {
     font-size: 1.2vw;
     margin-bottom: 8%;
     margin-top: 7%;
-    line-height: 1.6;
-    /* font-weight: bold; */
-
+    line-height: 1.9;
+    font-family: var(--paragraph_fonts);
 }
+
 
 .section5_box_viewOffers {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: .9vw;
+    font-size: 1vw;
     color: #303d2c;
     padding-bottom: 7%;
     cursor: pointer;
@@ -485,6 +487,7 @@ html {
     width: 103%;
     height: auto;
     padding-top: 100px;
+   
 
 }
 
@@ -517,8 +520,8 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: auto auto;
     margin: auto;
-
-
+    padding-bottom: 10vh;
+    
 }
 
 .section6_box_icon {
@@ -531,8 +534,17 @@ html {
     padding-left: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
-
-    color: aliceblue;
+    background-color: transparent;
+    color: aliceblue;  
+}
+.section6_box_viewOffers{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1vw;
+    color: var(--ligt_green);
+    padding-bottom: 7%;
+    cursor: pointer;
+  
 }
 
 /* SECTION 6 STYNING ENDS AND SECTION 7 STYLING STARTS HERE  */
@@ -582,6 +594,7 @@ html {
     font-size: 1.5vw;
     line-height: 2.3vw;
     font-weight: 300;
+   
 }
 
 .read_more {
@@ -838,10 +851,12 @@ padding-right: 20PX;
     border-radius: 30px;
     background-color: var(--ligt_green);
     text-wrap: nowrap;
+    text-transform: uppercase;
 }
 .footer_box_icons i {
     font-size: 2vw;
     padding: 20px 5px;
+    cursor:pointer;
 }
 
 /* FOOTER SECTION STYLING ENDS HERE  */
@@ -872,7 +887,7 @@ padding-right: 20PX;
 
     body,
     html {
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     /* NAV BAR  STYLING FOR 1200PX  */
@@ -902,6 +917,18 @@ padding-right: 20PX;
     .nav2_button {
         font-size: 1.1vw;
     }
+
+    /* section1  STYLING FOR 1200PX  */
+
+    .section1 {
+        max-height: 90vh;
+        height: auto;
+     
+    }
+    .section1_text {
+        min-height: 70vh;
+    }
+
 
 
     /* section2  STYLING FOR 1200PX  */
@@ -965,22 +992,26 @@ padding-right: 20PX;
 
     /* section5  STYLING FOR 1200PX  */
     .section5 {
-        MAX-height: 100vh;
+        
         height: fit-content;
         position: static;
-        padding-bottom: 5%;
+      
+        background-color: #fff;
+       
     }
 
-   
     .section5_hero_box {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
         height: 90%;
       position: static;
-      background-color: blueviolet;
       width: 100%;
+      max-height: 100%;
     }
 
     .section5_box{
         padding: 5%;
+
     }
     .section5_box_headdingText{
         font-size: 2.3VW;
@@ -988,11 +1019,31 @@ padding-right: 20PX;
     .section5_box_paragraphText{
         font-size: 1.6VW;
     }
-
+ /* section 6  STYLING FOR 1200PX  */
 .section6{
     padding-top: 100px;
-}
     
+    
+}
+.section6_hero_box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+ /* section 9  STYLING FOR 1200PX  */
+
+
+ .section9_hero_image{
+    display:none;
+ }
+    
+ .section9_hero_box{
+    width:80%;
+    margin: auto;
+ }
+
+
+
 
 }
 
@@ -1001,18 +1052,9 @@ padding-right: 20PX;
 
     body,
     html {
-        background-color: rgb(26, 105, 207);
+        /* background-color: rgb(26, 105, 207); */
     }
 
-
-
-    /* section 6  STYLING FOR 992PX  */
-    .section6 {
-        /* height: 100vh; */
-        height: auto;
-        /* padding-top: 10vh; */
-        padding-top: 30px;
-    }
 
 
 }
