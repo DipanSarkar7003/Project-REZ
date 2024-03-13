@@ -30,7 +30,7 @@ console.log(actual_time)
 
 time_element.textContent = (`${day} , ${actual_time}`)
 
-if (date == 4 || hours <= 8 ||hours >= 21) {
+if (date == 4 || hours <= 8 || hours >= 21) {
     open_status.textContent = " sorry closed now"
 }
 else {
@@ -62,28 +62,28 @@ window.addEventListener("scroll", () => {
     })
 
 
-// FADE WALA ANIMATION YAHA BANA RAHA HU 
+    // FADE WALA ANIMATION YAHA BANA RAHA HU 
 
 
 
-window.addEventListener('scroll', () => {
-    fadeed_elements.forEach((elem) => {
-        let fadeed_element_top = elem.getBoundingClientRect().top.toFixed()
-        let target = device_height - fadeed_element_top
+    window.addEventListener('scroll', () => {
+        fadeed_elements.forEach((elem) => {
+            let fadeed_element_top = elem.getBoundingClientRect().top.toFixed()
+            let target = device_height - fadeed_element_top
 
-        if (target >= 20) {
-            elem.classList.remove("faded")
-            elem.classList.add(".nonfaded")
-           
-        }
-        else {
-            elem.classList.remove("nonfaded")
-            elem.classList.add(".faded")
-            
-        }
-       
+            if (target >= 20) {
+                elem.classList.remove("faded")
+                elem.classList.add(".nonfaded")
+
+            }
+            else {
+                elem.classList.remove("nonfaded")
+                elem.classList.add(".faded")
+
+            }
+
+        })
     })
-})
 
 
 
