@@ -145,6 +145,42 @@ window.addEventListener("load" , ()=>{
 
 
 
+// GSAP KA FANDA YAHA SE SHURU KAR RAHA HU 
+
+
+// SECTION 1 ANIMATION 
+
+gsap.from ("#section1_text h1 , #section1_text button ,#section1_text  p" , {
+    delay:.5,
+    opacity : 0,
+    scale:0.9,
+    transform:"translatey(50%)",   
+     duration:.5,
+     stagger : .2 
+})
+
+
+// SECTION 2 ANUIMATION 
+
+gsap.from(".section2_box" , {
+    transform:"translatex(50%)",  
+    opacity:0 ,
+    scale:0.9,
+    duration:1.4,
+    stagger:.5,
+    scrollTrigger:{
+        trigger:"#section2",
+        scroller:"body",
+        // markers:true,
+        start:("top 70%"),
+        end : ("top 40%"),
+        scrub:2
+
+
+    }
+
+    // scrollTrigger:true
+})
 
 
 
