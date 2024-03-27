@@ -183,6 +183,42 @@ gsap.from(".section2_box" , {
 })
 
 
+// SECTION 5 ANIMATION 
+
+gsap.from (" .section5_box img ,.section5_box h1 ,.section5_box p,.section5_box a " , {
+    opacity:0,
+    duration:.3,
+    stagger:.1,
+    x:10,
+    scrollTrigger:{
+        trigger:".section5",
+        scroller:"body",
+        // markers: true,
+        start:("top 60%"),
+        end:("bottom 90%"),
+        scrub:2,
+       
+    }
+
+})
+
+
+gsap.from (" .section6_box img ,.section6_box h1 ,.section6_box p,.section6_box a " , {
+    opacity:0,
+    duration:.3,
+    stagger:.1,
+    x:10,
+    scrollTrigger:{
+        trigger:".section6",
+        scroller:"body",
+        // markers: true,
+        start:("top 60%"),
+        end:("bottom 90%"),
+        scrub:2,
+       
+    }
+
+})
 
 
 
