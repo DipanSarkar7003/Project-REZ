@@ -12,7 +12,9 @@ let activate = true;
 const time_element = document.querySelector("#time");
 const open_status = document.querySelector("#open_status")
 const fadeed_elements = document.querySelectorAll(".faded")
-
+const nav2_three_bar = document.querySelector(".nav2_three_bar")
+const mobile_menu = document.querySelector(".mobile_menu")
+const mobile_menu_cross = document.querySelector(".mobile_menu_cross")
 // WO NAV BAR KA TIMING YAHA SE UPDATE HOGA 
 
 const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
@@ -194,7 +196,7 @@ gsap.from (" .section5_box img ,.section5_box h1 ,.section5_box p,.section5_box 
         trigger:".section5",
         scroller:"body",
         // markers: true,
-        start:("top 60%"),
+        start:("top 80%"),
         end:("bottom 90%"),
         scrub:2,
        
@@ -202,6 +204,7 @@ gsap.from (" .section5_box img ,.section5_box h1 ,.section5_box p,.section5_box 
 
 })
 
+// SECTION 6 ANIMATION 
 
 gsap.from (" .section6_box img ,.section6_box h1 ,.section6_box p,.section6_box a " , {
     opacity:0,
@@ -221,8 +224,23 @@ gsap.from (" .section6_box img ,.section6_box h1 ,.section6_box p,.section6_box 
 })
 
 
+// PHONE MENU BAR LOGIC STARTS HERE 
 
 
+nav2_three_bar.addEventListener("click" , (e)=>{
+
+    mobile_menu.style.display="block"
+    nav2_three_bar.style.display="none"
+    mobile_menu_cross.style.fontSize= "2rem"
+
+})
+
+
+mobile_menu_cross.addEventListener("click" , ()=>{
+    mobile_menu.style.display="none"
+    nav2_three_bar.style.display="inline-block"
+    mobile_menu_cross.style.fontSize= "0"
+})
 
 
 
@@ -248,6 +266,13 @@ gsap.from (" .section6_box img ,.section6_box h1 ,.section6_box p,.section6_box 
 //       }
 // })
 // })
+// const float_box = document.querySelector(".float_box")
+// float_box.style.top= 100+"px";
 
 
-
+// document.addEventListener("mousemove" ,(e) =>{
+//     const float_box = document.querySelector(".float_box")
+//     float_box.style.top=e.y+"px"
+//     float_box.style.left=e.x +"px"
+//     console.log(e.y)
+// })
