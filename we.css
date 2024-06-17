@@ -1,0 +1,18 @@
+.we_section1 {
+    width: 100vw;
+    overflow: hidden;
+    background: url("images/group.jpg") no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    min-height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+/* .nav2_listItem{
+    text-decoration: none;
+    color: antiquewhite;
+} */
