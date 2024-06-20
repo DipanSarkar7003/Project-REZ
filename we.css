@@ -1,3 +1,16 @@
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --orange: #FF9600;
+    --plex: 'IBM Plex Sans', sans-serif;
+    --open: 'Open Sans', sans-serif;
+    --ligt_green: #c8d4c3;
+    --more_green: #52684b;
+    --dark_green: #303d2c;
+    --grey: #686868;
+    --border_grey: #DDDDDD;
+    --paragraph_font: "Dosis", sans-serif;
+}
+
 .we_section1 {
     width: 100vw;
     overflow: hidden;
@@ -16,3 +29,44 @@
     text-decoration: none;
     color: antiquewhite;
 } */
+.section2{
+    display: block;
+}
+.section2Headding{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.section2Content{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.personInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.personInfo img {
+    width: 400px;
+    border-radius: 10px;
+}
+.personName{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark_green);
+    margin: 0;
+
+}
+.personPosition{
+    font-size: 1.3rem;
+}
+.personDescription{
+    width: 70%;
+}
