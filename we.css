@@ -209,7 +209,7 @@ background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(140,164,132,1) 
 /* SECTION 6 SETARTS HERE  */
 
 .we_Section6_content{
-    width: 103%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
@@ -222,6 +222,7 @@ background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(140,164,132,1) 
 .ridingLogo{
     width:10rem ;
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 
 }
 .ridingLogo:hover{
