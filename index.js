@@ -1,5 +1,4 @@
 console.log("hello world")
-
 // BHAI WO GLOBAL VARIABLES YAHA PE DECLARE KAR DIA 
 
 let nums = document.querySelectorAll(".num");
