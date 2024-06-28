@@ -181,7 +181,7 @@
 
 .accordian_Answar {
   background-color: #dddddd;
-
+padding: 0 2rem;
   height: 0;
   overflow: hidden;
   transition: all ease 0.5s;
@@ -192,8 +192,10 @@
   content: "\002B";
   font-size: 2rem;
   transition: all ease 0.2s;
-  padding: 0;
-  padding-right: 10px;
+  padding-top: 0;
+  margin-right: 10px;
+  transform-origin: 50% 60%;
+
 }
 
 .accordian_item.active .accordian_Question {
@@ -203,9 +205,9 @@
 .accordian_item.active .accordian_Answar {
   height: 120px;
   max-height: 150px;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 .accordian_item.active .accordian_Question::after {
   /* content: "-"; */
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }

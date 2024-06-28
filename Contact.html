@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project REZ</title>
+</head>
+
+<body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="Contact.css">
+  <div class="loader">
+    <img src="images/loader.gif" alt="">
+  </div>
+
+  <!-- <---------- NAV BAR 1 STARTS HERE -------- -->
+
+  <div class="nav1" id="nav1">
+    <p class="logo" id="nav_logo">
+      Royal Enfield Zone
+    </p>
+
+    <div class="nav1_Right">
+      <div class="nav1_right_box" id="Nav1_Right_box1">
+        <i class="fa-regular fa-clock nav1_icons"></i>
+        <div class="nav1_right_box_partition">
+          <p id="time">monday 12: 25</p>
+          <p id="open_status">yes open now</p>
+        </div>
+      </div>
+      <div class="nav1_right_box" id="Nav1_Right_box2">
+        <i class="fa-solid fa-location-dot nav1_icons"></i>
+        <a id="address" href="https://maps.app.goo.gl/2QTsRCG3tDz14ZxP8">barrackpore <br>Ruiya</a>
+      </div>
+      <div class="nav1_right_box" id="Nav1_Right_box3">
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV 2 START HERE  -->
+
+  <div class="nav2" id="nav2">
+    <h1 class="logo" id="nav_logo2">Royal Enfield Zone</h1>
+    <ul id="nav2_ul">
+      <a class="nav2_listItem" id="nav2_listItem1" href="index.html">
+        Home
+      </a>
+      <a class="nav2_listItem" id="nav2_listItem2" href="we.html">
+        About us
+      </a>
+      <a class="nav2_listItem" id="nav2_listItem2" href="Service.html">
+        Service
+      </a>
+      <a class="nav2_listItem" id="nav2_listItem5" href="Contact.html">
+        Contacts
+      </a>
+      <button role="button" class="nav2_button" id="nav2_button"> Get your Booking
+      </button>
+      <i class="fa-solid fa-bars  nav2_three_bar"></i>
+      <i class="fa-solid fa-xmark mobile_menu_cross"></i>
+    </ul>
+  </div>
+
+  <!-- MOBIULE MENU STARTS HERE  -->
+
+  <div class="mobile_menu">
+
+    <ul id="mobile_menu_list">
+      <a class="mobile_menu_listItem" id="mobile_menu_listItem1" href="index.html">
+        Home
+      </a>
+      <a class="mobile_menu_listItem" id="mobile_menu_listItem2" href="we.html">
+        About us
+      </a>
+      <a class="mobile_menu_listItem" id="mobile_menu_listItem2">
+        Service
+      </a>
+      <a class="mobile_menu_listItem" id="mobile_menu_listItem4">
+        Pages
+      </a>
+      <a class="mobile_menu_listItem" id="mobile_menu_listItem5">
+        Contacts
+      </a>
+      <button role="button" class="nav2_button" id="nav2_button"> Get your Booking
+      </button>
+    </ul>
+  </div>
+
+  <section class="contact_Section1">
+    <div class="contact_Section1_content">
+      <form class="contact_Section1_content_left">
+        <p class="rez_name">Royal Enfield Zone</p>
+        <h1>Write here How Can We Help You ? </h1>
+        <input type="text" placeholder="enter your name">
+        <input type="email" placeholder="enter your email">
+        <input type="tel" placeholder="enter your phone number">
+        <!-- <label for="service">Choose a service : </label>
+
+        <div class="choose_service">
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          " >
+          <label for="diagnosis">Free Diagnosis</label> 
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          ">
+          <label for="diagnosis">Free Diagnosis</label> 
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          ">
+          <label for="diagnosis">Free Diagnosis</label>
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          ">
+          <label for="diagnosis">Free Diagnosis</label>
+        </div> -->
+        
+
+        <!-- <select name="service" id="">
+          <option value="Diagnosis"> Free Diagnosis</option>
+          <option value="pre ride">Pre ride Maintenance</option>
+          <option value="">Pre ride Maintenance</option>
+        </select> -->
+        <!-- <textarea name="Issue" id="issue" reize="none" placeholder="Write your issue here..."> 
+            </textarea> -->
+            <textarea rows="4" cols="50" placeholder=" Write your issue here..."></textarea>
+        <button class="nav2_button" onclick=handleSubmit()> Submit</button>
+
+        <!-- <a href="tel:7003224488">Call us at 888-219-2787</a> -->
+      </form>
+
+
+      <div class="contact_Section1_content_right">
+ <p class="rez_name">Visit team geek</p>
+ <p class="contact_description">Call us to schedule your service at our Barrackpore Wireless gatworkshop , you can choose you can choose technician as your choice .We are open Friday to wednesday (Thursday closed) from 8:30 Am to 9:30 PM.
+ </p>
+
+ <div class="cotact_info">
+        
+    <a href="tel:7003224488"> <i class="fa-solid fa-phone"></i> Call us at +91 7003224488</a>
+    <a href=" https://wa.me/7003224488">  <i class="fa-brands fa-whatsapp"></i> Whatsapp us on +91 7003224488 </a>
+    <a href="https://maps.app.goo.gl/pPt2FzV8BQ2aRaZv7"><i class="fa-solid fa-location-dot"></i> Visit Us At Barrackpore Wiireless Gate </a>
+  
+
+ </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://kit.fontawesome.com/11a9790664.js" crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

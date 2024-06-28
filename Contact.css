@@ -1,0 +1,132 @@
+:root {
+    --poppins: "Poppins", sans-serif;
+    --orange: #ff9600;
+    --plex: "IBM Plex Sans", sans-serif;
+    --open: "Open Sans", sans-serif;
+    --ligt_green: #c8d4c3;
+    --more_green: #52684b;
+    --dark_green: #303d2c;
+    --text_color: #4f6c44;
+    --grey: #686868;
+    --border_grey: #dddddd;
+    --paragraph_font: "Dosis", sans-serif;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+body , html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.contact_Section1_content{
+    display: flex;
+    padding: 4rem;
+    gap: 10rem;
+
+}
+
+/* SECTION 1 LEFT PART STYLING STARTS HERE  */
+
+.rez_name{
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--text_color);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+.contact_Section1_content_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact_Section1_content_left h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact_Section1_content_left input{
+border: none;
+border-bottom: 2px solid var(--more_green);
+width: 100%;
+padding: 1rem;
+position: relative;
+text-transform: capitalize;
+}
+.contact_Section1_content_left input:focus{
+    border: none;
+    border-bottom: 2px solid var(--more_green);
+    outline: none;
+}
+.contact_Section1_content_left input ::after{
+    content: "=>";
+    /* position: absolute; */
+    right: 1rem;
+    top: 50%;
+}
+.choose_service{
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+    /* background-color: #ff9600; */
+    padding: 1rem 0;
+}
+
+
+label{
+    display: inline;
+}
+textarea{
+    resize: none;
+    height: 300px;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 100%;
+}
+.contact_Section1_content_left button{
+    border: none;
+    padding:  1rem 2rem; 
+    position: relative;
+    text-transform: capitalize;
+    border-radius: 50px;
+    /* max-width: 50%; */
+}
+
+/* SECTION 1 RIGHT PART STYLING STARTS HERE  */
+
+.contact_Section1_content_right{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 0 4rem;
+   
+}
+.contact_description{
+    border-bottom: 1px solid var(--text_color);
+    padding-bottom: 1rem;
+}
+
+.cotact_info{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.cotact_info a{
+    text-decoration: none;
+    color: var(--text_color);
+    padding: 0.5rem 0;
+}
+.cotact_info a i{
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 2px solid var(--text_color);
+    border-radius: 100px;
+    
+
+}

@@ -186,6 +186,7 @@ html {
 }
 
 .nav2_three_bar {
+    cursor: pointer;
     font-size: 0;
     display: none;
 }
@@ -1046,14 +1047,10 @@ hr {
     .section1 {
         max-height: 90vh;
         height: auto;
-
     }
-
     .section1_text {
         min-height: 70vh;
     }
-
-
 
     /* section2  STYLING FOR 1200PX  */
 
@@ -1064,8 +1061,6 @@ hr {
     .description {
         font-size: 1.8vw;
     }
-
-
 
     /*  section3  STYLING FOR 1200PX  */
 
@@ -1260,7 +1255,6 @@ align-items: center;
     }
 
     #nav_logo2 {
-
         display: block;
     }
 
@@ -1268,13 +1262,14 @@ align-items: center;
         padding: 3% 0;
     }
 
-    .nav2 ul :nth-child(-n+6) {
+    .nav2 ul :nth-child(-n+5) {
         display: none;
     }
 
     .nav2_three_bar {
         font-size: 3vw;
         display: block;
+        color: black;
     }
 
     /* SECTION 3 STYLING FOR 768PX */
