@@ -299,6 +299,7 @@ padding: 1.5% 0;
 }
 
 .section1Button {
+    text-decoration: none;
     padding: 1vw 1vw;
     border: none;
     border-radius: 30px;
@@ -307,6 +308,11 @@ padding: 1.5% 0;
     margin-bottom: 5%;
     margin-top: 5%;
     text-transform: uppercase;
+}
+.section1Button a {
+    text-decoration: none;
+    color: var(--dark_green);
+
 }
 
 .rupesh_da_quote {

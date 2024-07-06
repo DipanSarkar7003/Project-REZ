@@ -37,3 +37,30 @@
         /* padding-top: 10vh; */
         padding-top: 30px;
     }
+
+    
+        <!-- <label for="service">Choose a service : </label>
+
+        <div class="choose_service">
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          " >
+          <label for="diagnosis">Free Diagnosis</label> 
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          ">
+          <label for="diagnosis">Free Diagnosis</label> 
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          ">
+          <label for="diagnosis">Free Diagnosis</label>
+          <input type="radio" name="diagnosis" id="diagnosis"  class="choose_service_input
+          ">
+          <label for="diagnosis">Free Diagnosis</label>
+        </div> -->
+        
+
+        <!-- <select name="service" id="">
+          <option value="Diagnosis"> Free Diagnosis</option>
+          <option value="pre ride">Pre ride Maintenance</option>
+          <option value="">Pre ride Maintenance</option>
+        </select> -->
+        <!-- <textarea name="Issue" id="issue" reize="none" placeholder="Write your issue here..."> 
+            </textarea> -->
