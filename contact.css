@@ -1,0 +1,86 @@
+.contact_Headding{
+    font-family: Wulkan display, serif;
+    font-weight: 600;
+    font-size: 7rem;
+    /* color: transparent;
+    outline: black;
+    text-shadow:  0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04); */
+    margin-bottom: 4rem;
+}
+main{
+    width: 100vw;
+    background-color:#EEE2D0;
+    min-height: 80vh
+
+
+} 
+.contact_Section{
+    padding: 3rem 0;
+}
+
+.contact_Headding span{
+    color: transparent;
+    -webkit-text-stroke: 1px #262422;
+    position: relative;
+    /* width: fit-content; */
+    /* background: #985757; */
+
+}
+
+.contact_Headding span img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: .7rem;
+}
+
+.contact_Form label { 
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+font-size: 1.1rem;
+}
+
+.contact_Form input  { 
+    background-color: rgba(38, 36, 34, .15);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ #Message {
+    /* min-height: 150px; */
+    padding-bottom: 120px;
+
+}
+
+/* CONTACT SECTION RIGHT PART STYLING STARTS HERE  */
+
+.contact_Section_content_Right_Heading { 
+     font-family: Wulkan display, serif;
+     font-weight: 900
+    ;
+}
+
+.contact_Section_content_Right_Description {
+    max-width: 70%;
+}
+
+
+.section9_box {
+    margin: 3rem 0;
+}
+.section9_box h1 {
+    text-wrap: nowrap;
+    font-weight: 500;
+    padding-bottom: 5%;
+    font-stretch: 2vw;
+}
+.border_p {
+    border-top: thin solid rgba(38, 36, 34, .15);
+    border-bottom: 1px solid rgba(38, 36, 34, .15);
+    padding: 5% 0;
+}
