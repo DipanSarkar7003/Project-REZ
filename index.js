@@ -231,6 +231,7 @@ nav2_three_bar.addEventListener("click" , (e)=>{
     mobile_menu.style.display="block"
     nav2_three_bar.style.display="none"
     mobile_menu_cross.style.fontSize= "2rem"
+    console.log("first")
 
 })
 
