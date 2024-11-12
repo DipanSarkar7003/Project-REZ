@@ -86,12 +86,10 @@ html {
 }
 
 #nav_logo {
-  /* font-family: var(--open); */
   color: var(--dark_green);
   padding: 1% 8%;
   font-weight: 700;
   font-size: 1.8rem;
-  /* text-decoration: underline; */
   cursor: pointer;
   margin-bottom: 0;
   text-wrap: nowrap;
@@ -133,7 +131,6 @@ html {
 }
 
 .nav1_right_box p {
-  /* background-color: #69707c; */
   width: 10vw;
   margin: 0;
   font-family: var(--poppins);
@@ -149,16 +146,13 @@ html {
   margin-bottom: 0;
   width: 100vw;
   transition: ease 0.3s all;
-  /* background-color: #FF9600; */
 }
 
 #nav_logo2 {
-  /* font-family: var(--open); */
   color: var(--dark_green);
   padding: 1% 8%;
   font-weight: 700;
   font-size: 1.8rem;
-  /* text-decoration: underline; */
   cursor: pointer;
   margin-bottom: 0;
   text-wrap: nowrap;
@@ -250,9 +244,9 @@ html {
 .mobile_menu_listItem:hover {
   background-color: var(--ligt_green);
 }
-.mobile-menu-button-wrapper{
-    margin-top: 1rem;
-    margin-left: 1rem;
+.mobile-menu-button-wrapper {
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 /* ANS SECTION 1 STSARTS HERE   */
@@ -440,7 +434,7 @@ html {
 .section5 {
   background-color: var(--dark_green);
   position: relative;
-  width: 103%;
+  /* width: 103%; */
   height: 70vh;
 }
 
@@ -497,7 +491,7 @@ html {
 /* SECTION 5 STYNING ENDS AND SECTION 6 STYLING STARTS HERE  */
 .section6 {
   background-color: var(--dark_green);
-  width: 103%;
+  /* width: 103%; */
   height: auto;
   padding-top: 100px;
 }
@@ -666,7 +660,7 @@ hr {
 
 /* SECTION 8 STYLING STARTS HERE  */
 .section8 {
-  width: 103%;
+  /* width: 103%; */
   padding-bottom: 10vh;
   /* background-color: var(--ligt_green); */
 }
@@ -1348,6 +1342,7 @@ hr {
   .section6_box {
     padding-top: 9%;
     border-bottom: 1px solid var(--border_grey);
+    padding-left: 0;
   }
 
   .section6_box_paragraphText {
@@ -1396,7 +1391,10 @@ hr {
   .double_quote {
     font-size: 2.5rem;
   }
-
+  .section_headding_part{
+    width: 100%;
+    padding: 1rem ;
+  }
   .section_headding_part h1 {
     font-size: 2rem;
 
@@ -1425,13 +1423,50 @@ hr {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 480px) {
-  body,
-  html {
-    /* background-color: rgb(219, 27, 27); */
-  }
-
   .nav2_three_bar {
     font-size: 5vw;
+  }
+
+  /* SECTION 1 STYING STARTS HERE  */
+  .section1_text_h1 {
+    max-width: 85%;
+  }
+  .section1Button {
+    font-size: 2.3vw;
+    padding: 2vw 2vw;
+  }
+
+  .rupesh_da_quote {
+    max-width: 65%;
+    font-size: 14px;
+  }
+
+  /* SECTION 4 STYLING STARTS HERE  */
+
+  .section4 {
+    width: auto;
+    padding: 1rem;
+  }
+  .section4_paragraph {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  /* SECTION 5 STYLING STARTS HERE  */
+  .section5_box_headdingText {
+    font-size: 18px;
+  }
+  .section5_box_paragraphText {
+    font-size: 13px;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    line-height: 1.4;
+  }
+
+  /* SECTION 6 STYLING STARTS HERE  */
+  .section6_box_paragraphText {
+    font-size: 13px;
+    line-height: 1.3;
   }
   /* SECTION 7 STYLING FOR 480PX */
 
@@ -1450,7 +1485,7 @@ hr {
       45% 100%,
       0 100%
     );
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: auto;
   }
@@ -1468,7 +1503,7 @@ hr {
     );
     position: static;
     transform: rotate(0);
-    width: 90%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding: 5% 5%;
@@ -1479,10 +1514,16 @@ hr {
   }
   .section7_hero_box_textPart_paragraph {
     padding-left: 0;
+    font-size: 13px;
+    width: 100%;
   }
   .read_more {
     padding-right: 0;
   }
+
+  .section_headding_part p {
+    font-size:13px;
+}
 
   /* SECTION 8 STYLING FOR 480PX */
 
