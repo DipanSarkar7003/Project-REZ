@@ -1,18 +1,322 @@
-.we_section1 {
-    width: 100vw;
-    overflow: hidden;
-    background: url("images/group.jpg") no-repeat center;
-    background-size: cover;
-    height: 90vh;
-    min-height: 50vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+:root {
+  --poppins: "Poppins", sans-serif;
+  --orange: #ff9600;
+  --plex: "IBM Plex Sans", sans-serif;
+  --open: "Open Sans", sans-serif;
+  --ligt_green: #c8d4c3;
+  --more_green: #52684b;
+  --dark_green: #303d2c;
+  --text_color: #4f6c44;
+  --grey: #686868;
+  --border_grey: #dddddd;
+  --paragraph_font: "Dosis", sans-serif;
 }
-/* .nav2_listItem{
-    text-decoration: none;
-    color: antiquewhite;
-} */
+body {
+  scroll-behavior: smooth;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+.we_section1 {
+  width: 100vw;
+  overflow: hidden;
+  background: url("images/group\ \(1\).jpg") no-repeat center;
+  background-size: cover;
+  height: 90vh;
+  min-height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section2 {
+  display: block;
+}
+.section2Headding {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.section2Content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.3rem;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.personInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.personInfo img {
+  width: 100%;
+  border-radius: 10px;
+}
+.personName {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text_color);
+  margin: 0;
+}
+.personPosition {
+  font-size: 1.3rem;
+}
+.personDescription {
+  width: 70%;
+}
+
+/* SECTION 3 STYLING STARTS HERE  */
+.we_Section3 {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  gap: 5%;
+  padding-bottom: 3rem;
+}
+.ourStory {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--text_color);
+}
+.ourStoryHeadding {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.weSection3ImagePart {
+  width: 450px;
+  object-fit: cover;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.weSection3TextPart {
+  /* padding: 1rem 5rem; */
+}
+
+/* SECTION 4 STARTS HERE  */
+
+.we_Section4 {
+  margin-bottom: 3rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(140, 164, 132, 1) 81%,
+    rgba(214, 223, 211, 1) 100%
+  );
+  padding: 3rem 0;
+}
+
+.we_Section5_description {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+}
+.we_Section4_content {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+
+  margin: auto;
+  gap: 10%;
+  padding: 1rem 0;
+}
+
+/* SECTION 5 STARTS HERE  */
+
+.we_Section5_content {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(5, auto);
+  gap: 3%;
+  margin: auto;
+  place-items: center;
+  padding-top: 3rem;
+  width: 93%;
+  height: auto;
+  padding-bottom: 15%;
+}
+
+.gridItem {
+  background-color: aqua;
+  font-size: 2rem;
+  color: #c8d4c3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#divItem1 {
+  /* grid-row: 1 / span 3; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+}
+
+#divItem2 {
+  /* grid-row: 1 / span 3; */
+
+  /* background-color: rgb(59, 125, 114); */
+  width: 100%;
+  height: 100%;
+}
+
+#divItem3 {
+  /* grid-row: 2 / span 3; */
+  grid-row-start: 2;
+  grid-row-end: 4;
+  /* background-color: blue; */
+  width: 100%;
+  height: 100%;
+}
+#divItem9 {
+  /* grid-row: 2 / span 3; */
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: 100%;
+  height: 100%;
+}
+
+.weSection_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SECTION 6 SETARTS HERE  */
+
+.we_Section6_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+
+  /* background-color: rgb(27, 115, 193); */
+}
+
+.riding-icons-swiper-container {
+  width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+  margin-top: 2rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  max-width: 25 0px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ridingLogo {
+  width: 10rem;
+  max-width: 100%;
+  mix-blend-mode: luminosity;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.ridingLogo:hover {
+  width: 10rem;
+  filter: grayscale(0%);
+  cursor: pointer;
+  transition: all ease 0.2s;
+  transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 992px) {
+  .we_Section3 {
+    flex-direction: column;
+  }
+
+  .weSection3ImagePart {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .we_Section4_content {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section2Content {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .we_Section5_description {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+  }
+
+  /* Section 5 styling start here  */
+
+  .we_Section5_content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  #divItem1 {
+    /* grid-row: 1 / span 3; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #divItem3 {
+    /* grid-row: 2 / span 3; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+  }
+
+  #divItem9 {
+    /* grid-row: 2 / span 3; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section2Content {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  /* Section 5 styling start here  */
+
+  .we_Section5_content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+}

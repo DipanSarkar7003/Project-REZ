@@ -1,121 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>we.html</title>
-</head>
-<body>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="we.css">
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Rez</title>
+  </head>
+
+  <body>
+    <!-- swiper css  -->
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="we.css" />
+
     <div class="nav1" id="nav1">
-        <p class="logo" id="nav_logo">
-          Royal Enfield Zone
+      <p class="logo" id="nav_logo">Royal Enfield Zone</p>
+
+      <div class="nav1_Right">
+        <div class="nav1_right_box" id="Nav1_Right_box1">
+          <i class="fa-regular fa-clock nav1_icons"></i>
+          <div class="nav1_right_box_partition">
+            <p id="time">monday 12: 25</p>
+            <p id="open_status">yes open now</p>
+          </div>
+        </div>
+        <div class="nav1_right_box" id="Nav1_Right_box2">
+          <i class="fa-solid fa-location-dot nav1_icons"></i>
+          <a id="address" href="https://maps.app.goo.gl/2QTsRCG3tDz14ZxP8"
+            >barrackpore <br />Ruiya</a
+          >
+        </div>
+        <div class="nav1_right_box" id="Nav1_Right_box3"></div>
+      </div>
+    </div>
+
+    <!-- NAV 2 START HERE  -->
+
+    <div class="nav2" id="nav2">
+      <h1 class="logo" id="nav_logo2">Royal Enfield Zone</h1>
+      <ul id="nav2_ul">
+        <a class="nav2_listItem" id="nav2_listItem1" href="index.html">
+          Home
+        </a>
+        <a
+          class="nav2_listItem"
+          id="nav2_listItem2"
+          href="we.html"
+          style="text-decoration: overline"
+        >
+          About us
+        </a>
+
+        <a class="nav2_listItem" id="nav2_listItem2" href="Service.html">
+          Service
+        </a>
+
+        <a class="nav2_listItem" id="nav2_listItem5" href="contact.html">
+          Contacts
+        </a>
+        <button role="button" class="nav2_button" id="nav2_button">
+          Get your Booking
+        </button>
+      </ul>
+      <i class="fa-solid fa-bars nav2_three_bar"></i>
+      <i class="fa-solid fa-xmark mobile_menu_cross"></i>
+    </div>
+
+    <!-- MOBILE MENU STARTS HERE  -->
+
+    <div class="mobile_menu">
+      <ul id="mobile_menu_list">
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem1"
+          href="index.html"
+        >
+          Home
+        </a>
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem2"
+          href="we.html"
+        >
+          About us
+        </a>
+
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem2"
+          href="Service.html"
+        >
+          Service
+        </a>
+
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem5"
+          href="contact.html"
+        >
+          Contacts
+        </a>
+      </ul>
+    </div>
+
+    <!-- NAV 2 ENDS  AND SECTION 1 STARTS HERE  -->
+
+    <section class="section we_section1 section1" id="we_section1">
+      <div class="section1_text" id="section1_text">
+        <h1 class="section1_text_h1">know more about us</h1>
+
+        <button class="section1Button">
+          <a href="#we_Section3"> Our Story </a>
+        </button>
+        <p class="rupesh_da_quote">
+          "If everyone is moving forward together, then success takes care of
+          itself,"
         </p>
-    
-        <div class="nav1_Right">
-          <div class="nav1_right_box" id="Nav1_Right_box1">
-            <i class="fa-regular fa-clock nav1_icons"></i>
-            <div class="nav1_right_box_partition">
-              <p id="time">monday 12: 25</p>
-              <p id="open_status">yes open now</p>
-            </div>
+        <p class="p2" id="rupesh_da">Henry Ford~</p>
+      </div>
+    </section>
+
+    <!--SECTION 2 SATARTS HERE   -->
+    <section class="section2 introduction">
+      <h1 class="section2Headding">Senior Technicians</h1>
+
+      <div class="section2Content">
+        <!-- PERSON 1  -->
+
+        <div class="personInfo">
+          <img src="images/person1.jpg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Rohan</p>
+            <p class="personPosition">Senior Technician (12+ years exp)</p>
           </div>
-          <div class="nav1_right_box" id="Nav1_Right_box2">
-            <i class="fa-solid fa-location-dot nav1_icons"></i>
-            <a id="address" href="https://maps.app.goo.gl/2QTsRCG3tDz14ZxP8">barrackpore <br>Ruiya</a>
+        </div>
+
+        <!-- PERSON 2  -->
+
+        <div class="personInfo">
+          <img src="images/person2.jpeg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Vikash</p>
+            <p class="personPosition">Senior Technician (10+ years exp)</p>
           </div>
-          <div class="nav1_right_box" id="Nav1_Right_box3">
+        </div>
+
+        <!-- PERSON 3  -->
+
+        <div class="personInfo">
+          <img src="images/person3.jpg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Rintu</p>
+            <p class="personPosition">Senior Technician(25+ years exp)</p>
           </div>
         </div>
       </div>
-    
-      <!-- NAV 2 START HERE  -->
-    
-      <div class="nav2" id="nav2">
-        <h1 class="logo" id="nav_logo2">Royal Enfield Zone</h1>
-        <ul id="nav2_ul">
-          <a class="nav2_listItem" id="nav2_listItem1" href="index.html">
-            Home
-          </a>
-          <a class="nav2_listItem" id="nav2_listItem2" href="we.html">
-            About us
-          </a>
-    
-          <a class="nav2_listItem" id="nav2_listItem2">
-            Service
-          </a>
-    
-    
-          <a class="nav2_listItem" id="nav2_listItem4">
-            Pages
-          </a>
-          <a class="nav2_listItem" id="nav2_listItem5">
-            Contacts
-          </a>
-          <button role="button" class="nav2_button" id="nav2_button"> Get your Booking
-          </button>
-          <i class="fa-solid fa-bars nav2_three_bar"></i>
-        </ul>
+      <h1 class="section2Headding">Junior Technicians</h1>
+      <div class="section2Content">
+        <!-- PERSON 4 -->
+
+        <div class="personInfo">
+          <img src="images/person4.jpg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Vijay</p>
+            <p class="personPosition">Junior Technician (7+ years exp)</p>
+          </div>
+        </div>
+
+        <!-- PERSON 5  -->
+
+        <div class="personInfo">
+          <img src="images/person5.jpg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Shuvankar</p>
+            <p class="personPosition">Junior Technician (4+ years exp)</p>
+          </div>
+        </div>
+
+        <!-- PERSON 6  -->
+
+        <div class="personInfo">
+          <img src="images/person6.jpg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Suvo</p>
+            <p class="personPosition">Junior Technician(3+ years exp)</p>
+          </div>
+        </div>
       </div>
 
+      <h1 class="section2Headding">Behind All These</h1>
 
-       <!-- MOBIULE MENU STARTS HERE  -->
+      <div class="section2Content">
+        <!-- PERSON 7  -->
 
-  <div class="mobile_menu">
+        <div class="personInfo">
+          <img src="images/RUPESH DA.jpg" alt="" />
+          <div class="personNameAndDesc">
+            <p class="personName">Rupesh</p>
+            <p class="personPosition">Owner (EX RE service manager)</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <ul id="mobile_menu_list">
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem1" href="index.html">
-        Home
-      </a>
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem2" href="we.html">
-        About us
-      </a>
+    <section class="we_Section3" id="we_Section3">
+      <div class="weSection3TextPart">
+        <p class="ourStory">Our Story</p>
+        <h1 class="ourStoryHeadding">Who we are !</h1>
+        <p class="ourStory_description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          autem placeat magni veniam ea maxime voluptatum magnam quisquam
+          aperiam cumque in impedit cupiditate facilis soluta incidunt nisi,
+          sint distinctio. A. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Fugiat totam obcaecati, iure officiis, ex, quidem animi
+          explicabo saepe similique veritatis commodi odit sunt ullam id alias
+          cumque corporis dignissimos voluptates?Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Qui magni, vero neque expedita
+          aspernatur ad cum quidem nisi quae, dolorem possimus numquam omnis
+          ducimus placeat. Fuga neque quae nobis eligendi.
+        </p>
+      </div>
+      <img src="images/group.jpg" alt="" class="weSection3ImagePart" />
+    </section>
 
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem2">
-        Service
-      </a>
+    <section class="we_Section4">
+      <div class="we_Section4_content">
+        <img src="images/our vision.jpg" alt="" class="weSection3ImagePart" />
 
+        <div class="weSection3TextPart">
+          <h1 class="ourStoryHeadding">Our Vision</h1>
+          <p class="ourStory_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            autem placeat magni veniam ea maxime voluptatum magnam quisquam
+            aperiam cumque in impedit cupiditate facilis soluta incidunt nisi,
+            sint distinctio. A. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Fugiat totam obcaecati, iure officiis, ex, quidem
+            animi explicabo saepe similique veritatis commodi odit sunt ullam id
+            alias cumque corporis dignissimos voluptates?Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Qui magni, vero neque expedita
+            aspernatur ad cum quidem nisi quae, dolorem possimus numquam omnis
+            ducimus placeat. Fuga neque quae nobis eligendi.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem4">
-        Pages
-      </a>
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem5">
-        Contacts
-      </a>
-      <button role="button" class="nav2_button" id="nav2_button"> Get your Booking
-      </button>
+    <section class="we_Section5">
+      <h1 class="section2Headding">What Else We Do ?</h1>
 
-    </ul>
+      <p class="we_Section5_description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis et
+        vero incidunt deserunt ad dolor ducimus reprehenderit odit ut modi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quia
+        enim repellendus, praesentium obcaecati ullam sunt.
+      </p>
+      <div class="we_Section5_content">
+        <div class="gridItem" id="divItem1">
+          <img src="images/we do 1.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem2">
+          <img
+            src="images/we do 9.jpg"
+            alt="not fund"
+            class="weSection_image"
+          />
+        </div>
+        <div class="gridItem" id="divItem3">
+          <img src="images/we do 4.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem4">
+          <img src="images/we do 3.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem5">
+          <img src="images/we do 5.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem6">
+          <img src="images/we do 6.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem7">
+          <img src="images/we do 7.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem8">
+          <img src="images/we do 8.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem9">
+          <img src="images/we d0 2.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem10">
+          <img src="images/we do 10.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem11">
+          <img src="images/we do 11.jpg" alt="" class="weSection_image" />
+        </div>
+        <div class="gridItem" id="divItem12">
+          <img src="images/we do 12.jpg" alt="" class="weSection_image" />
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <!-- <---------***** SECTION 6 STARTS HERE **********------------->
 
-      
-  <!-- NAV 2 ENDS  AND SECTION 1 STARTS HERE  -->
+    <section>
+      <div class="riding-icons-swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="images/riding group 1.png"
+              alt="error"
+              class="ridingLogo"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 2.jpg" alt="ERR" class="ridingLogo" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/riding logo 3.jpg"
+              alt="error"
+              class="ridingLogo"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 5.png" alt="" class="ridingLogo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 6.png" alt="" class="ridingLogo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 7.png" alt="" class="ridingLogo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 8.png" alt="" class="ridingLogo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 9.jpg" alt="" class="ridingLogo" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/riding logo 10.jpeg" alt="" class="ridingLogo" />
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <!-- THIS IS FOOTER BOX 1  -->
 
-  <section class=" section we_section1 section1" id="we_section1" style="background-image: url('images/group.jpg') object-fit=cover ">
-    <div class="section1_text " id="section1_text">
-      <h1 class="section1_text_h1">
-       know more about us 
-      </h1>
+      <div class="footer_box" id="footer_box1">
+        <h4 id="footeer_company">Company</h4>
+        <p class="footer_box_para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
 
-      <button class="section1Button">
-      Know more
-      </button>
-      <p class="rupesh_da_quote">"If everyone is moving forward together, then success takes care of itself,"</p>
-      <p class="p2" id="rupesh_da">Henry Ford~</p>
-    </div>
+      <!-- THIS IS FOOTER BOX 2  -->
+      <div class="footer_left">
+        <div class="footer_box" id="footer_box2">
+          <h4>Service Station</h4>
+          <p class="footer_box_para">
+            Barrackpore Wireless Gate kolkata : 700123
+          </p>
+          <p class="footer_box_para">Monday – Friday: 7:30am – 5pm</p>
+          <p>Rupesh singh</p>
+          <a href=""> mailREZ@gmail.com</a>
 
-  </section>
+          <h4>Royal Enfield Zone</h4>
+          <p>Markoos Delly</p>
+          <a href="">mail@mail.mail</a>
+        </div>
 
-  <!--SECTION 2 SATARTS HERE   -->
+        <!-- THIS IS FOOTER BOX 3  -->
 
+        <div class="footer_box" id="footer_box3">
+          <h4>Auto Body Shop</h4>
+          <a href="">mail@mail.mail</a>
 
-  <script src="https://kit.fontawesome.com/11a9790664.js" crossorigin="anonymous"></script>
+          <h4>Diagnostics</h4>
+          <a href="">mail2@mail.mail</a>
+        </div>
+      </div>
 
-</body>
+      <div class="footer_right">
+        <div class="footer_box" id="footer_box4">
+          <h4>Site Map</h4>
+          <div class="footer_box_ancors">
+            <a href="index.html">Home</a>
+            <a href="we.html">About Us</a>
+            <a href="Service.html">Service</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer_box" id="footer_box5">
+          <button>
+            <a href="contact.html">Get Your Booking</a>
+          </button>
+          <div class="footer_box_icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p class="copyright_section">
+      Copyright © 2024 An Automobile Repair Shop | Designed & developed by
+      @Dipan_Sarkar for your site development and any query <br />
+      about ths website please feel free to contact
+      <a href="">dipansarkar1005@gmail.com</a>
+    </p>
+    <hr />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/11a9790664.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var swiper = new Swiper(
+        ".riding-icons-swiper-container",
+
+        {
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+            },
+          },
+          slidesPerView: 6, // Adjust this to control the number of visible slides
+          spaceBetween: 30, // Space between slides
+          freeMode: true, // Enable free mode
+          loop: true, // Enable infinite scrolling (loop)
+          autoplay: {
+            delay: 3000, // Autoplay delay (optional)
+            disableOnInteraction: false, // Continue autoplay even after interaction
+          },
+        }
+      );
+    </script>
+  </body>
 </html>

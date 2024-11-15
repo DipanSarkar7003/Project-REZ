@@ -1,5 +1,4 @@
 console.log("hello world")
-
 // BHAI WO GLOBAL VARIABLES YAHA PE DECLARE KAR DIA 
 
 let nums = document.querySelectorAll(".num");
@@ -232,6 +231,7 @@ nav2_three_bar.addEventListener("click" , (e)=>{
     mobile_menu.style.display="block"
     nav2_three_bar.style.display="none"
     mobile_menu_cross.style.fontSize= "2rem"
+    console.log("first")
 
 })
 

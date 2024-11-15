@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project REZ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body class="added_body">
+    <div class="loader">
+      <img src="images/loader.gif" alt="" />
+    </div>
+
+    <!-- <---------- NAV BAR 1 STARTS HERE -------- -->
+
+    <div class="nav1" id="nav1">
+      <p class="logo" id="nav_logo">Royal Enfield Zone</p>
+
+      <div class="nav1_Right">
+        <div class="nav1_right_box" id="Nav1_Right_box1">
+          <i class="fa-regular fa-clock nav1_icons"></i>
+          <div class="nav1_right_box_partition">
+            <p id="time">monday 12: 25</p>
+            <p id="open_status">yes open now</p>
+          </div>
+        </div>
+        <div class="nav1_right_box" id="Nav1_Right_box2">
+          <i class="fa-solid fa-location-dot nav1_icons"></i>
+          <a id="address" href="https://maps.app.goo.gl/2QTsRCG3tDz14ZxP8"
+            >barrackpore <br />Ruiya</a
+          >
+        </div>
+        <div class="nav1_right_box" id="Nav1_Right_box3"></div>
+      </div>
+    </div>
+
+    <!-- NAV 2 START HERE  -->
+
+    <div class="nav2 container-fluid" id="nav2">
+      <h1 class="logo" id="nav_logo2">Royal Enfield Zone</h1>
+      <ul id="nav2_ul">
+        <a class="nav2_listItem" id="nav2_listItem1" href="index.html">
+          Home
+        </a>
+        <a class="nav2_listItem" id="nav2_listItem2" href="we.html">
+          About us
+        </a>
+
+        <a class="nav2_listItem" id="nav2_listItem2" href="Service.html">
+          Service
+        </a>
+
+        <a
+          class="nav2_listItem"
+          id="nav2_listItem5"
+          href="contact.html"
+          style="text-decoration: overline"
+        >
+          Contacts
+        </a>
+        <button role="button" class="nav2_button" id="nav2_button">
+          <i
+            href="contact.html
+        "
+            >Get your Booking</i
+          >
+        </button>
+      </ul>
+      <i class="fa-solid fa-bars nav2_three_bar"></i>
+      <i class="fa-solid fa-xmark mobile_menu_cross"></i>
+    </div>
+
+    <!-- MOBILE MENU STARTS HERE  -->
+
+    <div class="mobile_menu">
+      <ul id="mobile_menu_list">
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem1"
+          href="index.html"
+        >
+          Home
+        </a>
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem2"
+          href="we.html"
+        >
+          About us
+        </a>
+
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem2"
+          href="Service.html"
+        >
+          Service
+        </a>
+
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem5"
+          href="contact.html"
+        >
+          Contacts
+        </a>
+      </ul>
+    </div>
+    <main>
+      <!-- MAIN SECTION STARTS HERE  -->
+
+      <section class="contact_Section">
+        <h1 class="contact_Headding">
+          Here to <span>help <img src="images/line.png" alt="" /></span>
+        </h1>
+
+        <div class="contact_Section_content row">
+          <div class="col-lg-5 mb-4 mb-lg-0 contact_Section_content_Left row">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact_Form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="eb66cf36-af81-424b-b7d6-ee12b82f4e23"
+              />
+              <label for="FullName " class="col-lg-12 font-weight-bolder"
+                >Full name *</label
+              >
+              <input
+                type="text"
+                name="name"
+                class="col-lg-12"
+                placeholder="Enter your full name..."
+                id="FullName"
+              />
+
+              <label
+                for="contact_Form_Address"
+                class="col-lg-12 font-weight-bold"
+                >Enter your address *</label
+              >
+              <input
+                type="text"
+                class="col-lg-12"
+                name="address"
+                placeholder="Enter your address..."
+                id="contact_Form_Address"
+              />
+
+              <label for="contactNumber" class="col-lg-12"
+                >Contact number*</label
+              >
+              <input
+                type="phone"
+                class="col-lg-12"
+                name="number"
+                placeholder="Enter your contact number..."
+                id="contactNumber"
+              />
+
+              <label for="Message" class="col-lg-12 fst-bold">Message*</label>
+              <input
+                type="text"
+                class="col-lg-12"
+                name="message"
+                id="Message"
+                placeholder="Enter query here..."
+                id="Message"
+              />
+
+              <button
+                id=" contact_Form_Submit"
+                type="submit"
+                class="btn btn-secondary mt-3"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-7 contact_Section_content_Right">
+            <h1 class="contact_Section_content_Right_Heading">
+              We will get back to you ...
+            </h1>
+            <p class="contact_Section_content_Right_Description">
+              fill the form with your information and we will get back to you
+              soon . you can expect a call form us within 1 hour .
+            </p>
+
+            <div class="section9_box" id="section9_box1">
+              <div class="section9_box1_part" id="section9_box1_part1" style= >
+              <h1>Free Apointment</h1>
+              <p class="">
+                <i class="fa-solid fa-check"></i> Free Diagnosis & Brake Checks
+              </p>
+              <p class="border_p">
+                <i class="fa-solid fa-check"></i> Expect free call from us
+              </p>
+              <p class="">
+                <i class="fa-solid fa-check"></i> Message with photo and video
+              </p>
+            </div>
+            <div class="section9_box1_part">
+              <h1>Working Hours</h1>
+              <p class="">
+                <i aria-hidden="true" class="fas fa-calendar-day"></i> Friday –
+                Wednesday: 8:30am – pm
+              </p>
+              <p class="border_p">
+                <i aria-hidden="true" class="fas fa-calendar-day"></i>
+                Saturday : Full Day Off
+              </p>
+              <p class="">
+                <i aria-hidden="true" class="far fa-bell"></i> Emergency : 24Hr
+                / 7Days
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER STARTS HERE  -->
+
+    <footer class="footer">
+      <!-- THIS IS FOOTER BOX 1  -->
+
+      <div class="footer_box" id="footer_box1">
+        <h4 id="footeer_company">Company</h4>
+        <p class="footer_box_para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+
+      <!-- THIS IS FOOTER BOX 2  -->
+      <div class="footer_left">
+        <div class="footer_box" id="footer_box2">
+          <h4>Service Station</h4>
+          <p class="footer_box_para">
+            Barrackpore Wireless Gate kolkata : 700123
+          </p>
+          <p class="footer_box_para">Monday – Friday: 7:30am – 5pm</p>
+          <p>Rupesh singh</p>
+          <a href=""> mailREZ@gmail.com</a>
+
+          <h4>Royal Enfield Zone</h4>
+          <p>Markoos Delly</p>
+          <a href="">mail@mail.mail</a>
+        </div>
+
+        <!-- THIS IS FOOTER BOX 3  -->
+
+        <div class="footer_box" id="footer_box3">
+          <h4>Auto Body Shop</h4>
+          <a href="">mail@mail.mail</a>
+
+          <h4>Diagnostics</h4>
+          <a href="">mail2@mail.mail</a>
+        </div>
+      </div>
+
+      <div class="footer_right">
+        <div class="footer_box" id="footer_box4">
+          <h4>Site Map</h4>
+          <div class="footer_box_ancors">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Service</a>
+            <a href="">Pages</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer_box" id="footer_box5">
+          <button>
+            <a href="we.html"> Know about us </a>
+          </button>
+          <div class="footer_box_icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- EXTERNAL LINKS  -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/11a9790664.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

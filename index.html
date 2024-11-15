@@ -1,649 +1,736 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project REZ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project REZ</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
-</head>
+  <body class="added_body">
+    <div class="loader">
+      <img src="images/loader.gif" alt="" />
+    </div>
 
-<body class="added_body">
+    <!-- <---------- NAV BAR 1 STARTS HERE -------- -->
 
-  <div class="loader">
+    <div class="nav1" id="nav1">
+      <p class="logo" id="nav_logo">Royal Enfield Zone</p>
 
-
-    <img src="images/loader.gif" alt="">
-  </div>
-
-
-  <!-- <---------- NAV BAR 1 STARTS HERE -------- -->
-
-  <div class="nav1" id="nav1">
-    <p class="logo" id="nav_logo">
-      Royal Enfield Zone
-    </p>
-
-    <div class="nav1_Right">
-      <div class="nav1_right_box" id="Nav1_Right_box1">
-        <i class="fa-regular fa-clock nav1_icons"></i>
-        <div class="nav1_right_box_partition">
-          <p id="time">monday 12: 25</p>
-          <p id="open_status">yes open now</p>
+      <div class="nav1_Right">
+        <div class="nav1_right_box" id="Nav1_Right_box1">
+          <i class="fa-regular fa-clock nav1_icons"></i>
+          <div class="nav1_right_box_partition">
+            <p id="time">monday 12: 25</p>
+            <p id="open_status">yes open now</p>
+          </div>
         </div>
-      </div>
-      <div class="nav1_right_box" id="Nav1_Right_box2">
-        <i class="fa-solid fa-location-dot nav1_icons"></i>
-        <a id="address" href="https://maps.app.goo.gl/2QTsRCG3tDz14ZxP8">barrackpore <br>Ruiya</a>
-      </div>
-      <div class="nav1_right_box" id="Nav1_Right_box3">
+        <div class="nav1_right_box" id="Nav1_Right_box2">
+          <i class="fa-solid fa-location-dot nav1_icons"></i>
+          <a id="address" href="https://maps.app.goo.gl/2QTsRCG3tDz14ZxP8"
+            >barrackpore <br />Ruiya</a
+          >
+        </div>
+        <div class="nav1_right_box" id="Nav1_Right_box3"></div>
       </div>
     </div>
-  </div>
 
-  <!-- NAV 2 START HERE  -->
+    <!-- NAV 2 START HERE  -->
 
-  <div class="nav2" id="nav2">
-    <h1 class="logo" id="nav_logo2">Royal Enfield Zone</h1>
-    <ul id="nav2_ul">
-      <a class="nav2_listItem" id="nav2_listItem1" href="index.html">
-        Home
-      </a>
-      <a class="nav2_listItem" id="nav2_listItem2" href="we.html">
-        About us
-      </a>
+    <div class="nav2" id="nav2">
+      <h1 class="logo" id="nav_logo2">Royal Enfield Zone</h1>
+      <ul id="nav2_ul">
+        <a class="nav2_listItem" id="nav2_listItem1" href="index.html">
+          Home
+        </a>
+        <a class="nav2_listItem" id="nav2_listItem2" href="we.html">
+          About us
+        </a>
 
-      <a class="nav2_listItem" id="nav2_listItem2">
-        Service
-      </a>
+        <a class="nav2_listItem" id="nav2_listItem2" href="Service.html">
+          Service
+        </a>
 
-
-      <a class="nav2_listItem" id="nav2_listItem4">
-        Pages
-      </a>
-      <a class="nav2_listItem" id="nav2_listItem5">
-        Contacts
-      </a>
-      <button role="button" class="nav2_button" id="nav2_button"> Get your Booking
-      </button>
-      <i class="fa-solid fa-bars  nav2_three_bar"></i>
+        <a class="nav2_listItem" id="nav2_listItem5" href="contact.html">
+          Contacts
+        </a>
+        <button role="button" class="nav2_button" id="nav2_button">
+          <i
+            href="contact.html
+        "
+            >Get your Booking</i
+          >
+        </button>
+      </ul>
+      <i class="fa-solid fa-bars nav2_three_bar"></i>
       <i class="fa-solid fa-xmark mobile_menu_cross"></i>
-    </ul>
-  </div>
-
-  <!-- MOBIULE MENU STARTS HERE  -->
-
-  <div class="mobile_menu">
-
-    <ul id="mobile_menu_list">
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem1" href="index.html">
-        Home
-      </a>
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem2" href="we.html">
-        About us
-      </a>
-
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem2">
-        Service
-      </a>
-
-
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem4">
-        Pages
-      </a>
-      <a class="mobile_menu_listItem" id="mobile_menu_listItem5">
-        Contacts
-      </a>
-      <button role="button" class="nav2_button" id="nav2_button"> Get your Booking
-      </button>
-
-    </ul>
-
-  </div>
-
-  <!-- NAV 2 ENDS  AND SECTION 1 STARTS HERE  -->
-
-
-  <section class=" section section1" id="section1">
-    <div class="section1_text " id="section1_text">
-      <h1 class="section1_text_h1">
-        A Certified Service, Repair and Restore
-      </h1>
-
-      <button class="section1Button">
-        get free estimate
-      </button>
-      <p class="rupesh_da_quote">"We always provide the best quality of work at the best price , your bike our
-        responsibility "</p>
-      <p class="p2" id="rupesh_da">Rupesh Singh ~</p>
     </div>
 
-  </section>
+    <!-- MOBIULE MENU STARTS HERE  -->
 
-
-  <!-- SECTION 1 ENDS AND SECTION 2 STARTS HERE  -->
-
-
-  <section class=" section section2  " id="section2">
-    <div class="section2_box">
-      <img src="images/inspection.png" alt="" class="section2_box_image">
-      <div class="section2_text_part">
-        <h2 class="headding">Free Inspection</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quisquam officiis nobis.
-        </p>
-        <a href="#" class="learn_more">Learn More</a>
-      </div>
-
-    </div>
-    <div class="section2_box" id="section2_middle_box">
-      <img src="images/mechanic.png" alt="" class="section2_box_image">
-      <div class="section2_text_part">
-        <h2 class="headding">Expert Technician</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quisquam officiis nobis.
-        </p>
-        <a href="#" class="learn_more">Learn More</a>
-      </div>
-
-    </div>
-    <div class="section2_box">
-      <img src="images/customer-care.png" alt="" class="section2_box_image">
-      <div class="section2_text_part">
-        <h2 class="headding">Customer Support</h2>
-        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quisquam officiis nobis.
-        </p>
-        <a href="#" class="learn_more">Learn More</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SECTION 2 ENDS END SECTION 3 STARTS HERE  -->
-
-
-  <section class=" hidden section section3">
-
-    <!-- SECTION 3 BOX 1 STARTS HERE  -->
-    <div class="section3_box hidden" id="section3_box1">
-      <div class="section3_box_textPart">
-        <h1>20% off on parts</h1>
-        <p class="section3_box_textPart_paragraph">Book your service now and get 20% discount on every purchase , So
-          dont waste time and book your service now
-        </p>
-        <button class="section3_box_textPart_button">
-          Get now
-        </button>
-      </div>
-    </div>
-    <!-- SECTION 3 BOX 2 STRTS HERE  -->
-
-    <div class="section3_box hidden" id="section3_box2">
-      <div class="section3_box_textPart">
-        <h1>40% off on Labour</h1>
-        <p class="section3_box_textPart_paragraph">Book your service now and get 20% discount on every purchase , So
-          dont waste time and book your service now
-        </p>
-        <button class="section3_box_textPart_button"> Get now</button>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- SECTION 3 ENDS END SECTION 4 STARTS HERE  -->
-
-  <section class=" hidden section section4">
-    <h1>Our Services</h1>
-    <p class="section4_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit orci, condimentum
-      ac diam a, euismod suscipit ante. Pellentesque eget dui neque. Nunc sed aliquet nisl. Sed ac arcu congue, mattis
-      ligula non, fringilla mi.</p>
-  </section>
-
-  <!-- SECTION 4 ENDS END SECTION 5 STARTS HERE  -->
-
-  <section class="section5" id="section5">
-    <div class="section5_hero_box ">
-      <div class="section5_box">
-        <img src="images/engine_light_icon.png" alt="" class="section5_box_icon">
-        <h1 class="section5_box_headdingText">engine light check</h1>
-        <p class="section5_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section5_box_viewOffers">
-          — view service offers
+    <div class="mobile_menu">
+      <ul id="mobile_menu_list">
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem1"
+          href="index.html"
+        >
+          Home
         </a>
-      </div>
-      <div class="section5_box">
-        <img src="images/engine_oil_icon.png" alt="" class="section5_box_icon">
-        <h1 class="section5_box_headdingText">Lube, Oil & Filter Change</h1>
-        <p class="section5_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section5_box_viewOffers">
-          — view service offers
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem2"
+          href="we.html"
+        >
+          About us
         </a>
-      </div>
-      <div class="section5_box">
-        <img src="images/brake_icon.png" alt="" class="section5_box_icon">
-        <h1 class="section5_box_headdingText">Brake Repair</h1>
-        <p class="section5_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section5_box_viewOffers">
-          — view service offers
+
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem2"
+          href="Service.html"
+        >
+          Service
         </a>
-      </div>
-      <div class="section5_box">
-        <img src="images/suspension_icon.png" alt="" class="section5_box_icon">
-        <h1 class="section5_box_headdingText">Suspension Repair</h1>
-        <p class="section5_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section5_box_viewOffers">
-          — view service offers
+
+        <a
+          class="mobile_menu_listItem"
+          id="mobile_menu_listItem5"
+          href="contact.html"
+        >
+          Contacts
         </a>
-      </div>
-      <div class="section5_box">
-        <img src="images//body_paint_icon.png" alt="" class="section5_box_icon">
-        <h1 class="section5_box_headdingText">Denting and Painting</h1>
-        <p class="section5_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section5_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-      <div class="section5_box">
-        <img src="images/engine_work_icon.png" alt="" class="section5_box_icon">
-        <h1 class="section5_box_headdingText">engine work</h1>
-        <p class="section5_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section5_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
+      </ul>
     </div>
 
-  </section>
+    <!-- NAV 2 ENDS  AND SECTION 1 STARTS HERE  -->
 
-
-  <!-- SECTION 5 ENDS END SECTION 6 STARTS HERE  -->
-  <section class="section6">
-
-    <h1 class="section6_headding">
-      <img src="images/hand_hold.png" alt="no image" class="section6_animation_wheel">
-      we also offer
-      <img src="images/hand_hold.png" alt="" class="section6_animation_wheel">
-    </h1>
-
-    <div class="section6_hero_box">
-      <div class="section6_box">
-        <img src="images/towing_icon.png" alt="" class="section6_box_icon">
-        <h1 class="section5_box_headdingText">towing service</h1>
-        <p class="section6_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section6_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-      <div class="section6_box">
-        <img src="images/pickup_drop_icon.png" alt="" class="section6_box_icon">
-        <h1 class="section5_box_headdingText">free pickup & drop</h1>
-        <p class="section6_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section6_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-      <div class="section6_box">
-        <img src="images/wheel_alignment_icon.png" alt="" class="section6_box_icon">
-        <h1 class="section5_box_headdingText">wheel alignment</h1>
-        <p class="section6_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section6_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-      <div class="section6_box">
-        <img src="images/restoration_icon.png" alt="" class="section6_box_icon">
-        <h1 class="section5_box_headdingText">restoration</h1>
-        <p class="section6_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section6_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-      <div class="section6_box">
-        <img src="images/insurence_claim_icon.png" alt="" class="section6_box_icon">
-        <h1 class="section5_box_headdingText">Insurence Claim</h1>
-        <p class="section6_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section6_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-      <div class="section6_box">
-        <img src="images/modification_icon.png" alt="" class="section6_box_icon">
-        <h1 class="section5_box_headdingText">Modification</h1>
-        <p class="section6_box_paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <a class="section6_box_viewOffers">
-          — view service offers
-        </a>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- SECTION 6 ENDS END SECTION 7 STARTS HERE  -->
-
-  <section class="section7">
-    <div class="section7_hero_box">
-      <img src="images/why_choose_us.jpg" alt="" class="section7_hero_box_image">
-      <div class="section7_hero_box_textPart">
-        <h1 class="section7_hero_box_textPart_headding">Why Choose Us?</h1>
-        <p class="section7_hero_box_textPart_paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-          pulvinar dapibus leo.
-        </p>
-        <a class="read_more"> — Read More</a>
-      </div>
-    </div>
-
-
-    <div class=" number_countPart ">
-      <div class="hidden number_countPart_box" id="number_countPart_box1">
-        <h1 class="number_countPart_box_number num" value_count="10" id="1">00</h1>
-        <p class="number_countPart_box_p">
-          Technician and workers
-        </p>
-      </div>
-      <div class="hidden  number_countPart_box" id="number_countPart_box2">
-        <h1 class="number_countPart_box_number num" value_count="100" id="2">00 </h1>
-        <p class="number_countPart_box_p">
-          Repaired Vehicles
-        </p>
-      </div>
-      <div class=" hidden number_countPart_box" id="number_countPart_box3">
-        <h1 class="number_countPart_box_number num" value_count="80" id="3">00 </h1>
-        <p class="number_countPart_box_p">
-          Stisfied Customers
-        </p>
-      </div>
-    </div>
-
-
-  </section>
-
-  <hr>
-
-  <!-- SECTION 7 ENDS END SECTION 8 STARTS HERE  -->
-
-  <section class="section8">
-    <div class="section_headding_part">
-      <h1>
-        Read our rider's story
-      </h1>
-      <p>
-        Our customers have some amezing stories with us . some times for our service , some times for our behaviour and
-        some times for our dedication . do you aslo wanna know ? here are some of them ~
-      </p>
-    </div>
-
-    <div class="section8_hero_box">
-      <div class="section8_box" id="section8_box1">
-        <img src="images/testi_1.png" alt="">
-        <div class="five_star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <i class="fa-solid fa-quote-left double_quote" double_quote></i>
-        <p class="testimonial">
-          One stop for all services related to Royal Enfield
-          Great people and staff. They provide best in class service for your Bikes. And one of the best polishing
-          finish.
-          Keep up the great work and kudos to all the members..
-          cheers…
-        </p>
-        <h3 class="name">Rahul Chakraborty ~</h3>
-      </div>
-      <div class="section8_box" id="section8_box2">
-        <img src="images/testi_2.png" alt="">
-        <div class="five_star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <i class="fa-solid fa-quote-left double_quote"></i>
-        <p class="testimonial">
-          Wonderful experience and a great job by Rupesh da and his team. It was my first time, suggested by one of my
-          friend for my RE TBX 350. The service, behaviour, quality of work was top notch. I highly recommend their
-          services to all fellow Enfield lovers. Thank you again Rupesh da #retbx350❤️
-        </p>
-        <h3 class="name">Abhisek Chakraborty ~</h3>
-      </div>
-      <div class="section8_box" id="section8_box3">
-        <img src="images/testi_3.png" alt="">
-        <div class="five_star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <i class="fa-solid fa-quote-left double_quote"></i>
-        <p class="testimonial">
-          From servicing to accessories, from loyalty to behaviour, this place is perfect for Royal Enfield owners..
-          From small to big issues of your Royal Enfield can be fixed here.. Rupesh Da and his team are always ready to
-          help.. Wishing more prosperity ❤️
-        </p>
-        <h3 class="name">Tathagata Chatterjee ~</h3>
-      </div>
-      <div class="section8_box" id="section8_box4">
-        <img src="images/testi_4.png" alt="">
-        <div class="five_star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <i class="fa-solid fa-quote-left double_quote"></i>
-        <p class="testimonial">
-          It was my first time after getting suggested by one of my friend, wanted to change my tyres for my Himalayan,
-          and to my shock the service, And all credit goes to Rupesh da and his
-          team. I would really all of you guys to do pay a visit. </p>
-        <h3 class="name">Arunit Tobay ~</h3>
-      </div>
-      <div class="section8_box" id="section8_box5">
-        <img src="images/testi_5.png" alt="">
-        <div class="five_star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <i class="fa-solid fa-quote-left double_quote"></i>
-        <p class="testimonial">
-          Wonderful all round services given to me..With total financial clarity..Mr. Rupesh and team serviced
-          my Thunderbird while I was in Guwahati..It was of immense help to me as I could ride my cruiser during Durga
-          Puja..
-        <h3 class="name">Palash Bhowmik ~</h3>
-
-        </p>
-      </div>
-      <div class="section8_box" id="section8_box6">
-        <img src="images/testi_6.png" alt="">
-        <div class="five_star">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <i class="fa-solid fa-quote-left double_quote"></i>
-        <p class="testimonial">
-          Very good experience I have with first time visited REZ Barrackpur. Actually the Owner Rupesh Sing is very
-          nice person and well knowledgeable. Lets hope this experience will last long with REZ.
-        </p>
-        <h3 class="name">Kuntal Roy ~</h3>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- SECTION 9 STARTS HERE  -->
-  <hr>
-  <section class="section9">
-    <img src="images/mechanic_man.jpg" alt="" class="section9_hero_image">
-    <div class="section9_hero_box">
-
-
-      <!-- SECTION 9 HERO BOX INNER PART 1 -->
-
-      <div class="section9_box" id="section9_box1">
-
-        <div class="section9_box1_part" id="section9_box1_part1">
-          <h1>Free Apointment</h1>
-          <p class=""><i class="fa-solid fa-check"></i> Free Diagnosis & Brake Checks</p>
-          <p class="border_p"><i class="fa-solid fa-check"></i> Expect free call from us</p>
-          <p class=""><i class="fa-solid fa-check"></i> Message with photo and video </p>
-        </div>
-        <div class="section9_box1_part">
-          <h1>Working Hours</h1>
-          <p class=""><i aria-hidden="true" class="fas fa-calendar-day"></i> Friday – Wednesday: 8:30am – pm</p>
-          <p class="border_p"><i aria-hidden="true" class="fas fa-calendar-day"></i> Saturday : Full Day Off </p>
-          <p class=""><i aria-hidden="true" class="far fa-bell"></i> Emergency : 24Hr / 7Days</p>
-        </div>
-      </div>
-      <!-- SECTION 9 HERO BOX INNER PART 2 -->
-
-      <div class="section9_box" id="section9_box2">
-        <h1>
-          The Office
+    <section class="section section1" id="section1">
+      <div class="section1_text" id="section1_text">
+        <h1 class="section1_text_h1">
+          A Certified Service, Repair and Restore
         </h1>
-        <p class=""><span><i aria-hidden="true" class="far fa-address-book"></i> Address:</span>Barrackpore Wireless
-          Gate kolkata : 700123</p>
-        <p class="border_p2"><span><i aria-hidden="true" class="fas fa-phone-alt"></i> Phone:</span> 7003781708</p>
-        <p class=""><span><i aria-hidden="true" class="fas fa-mail-bulk"></i> Email:</span> mailREZ@gmail.com</p>
-      </div>
 
-      <!-- SECTION 9 HERO BOX INNER PART 3 -->
-
-      <div class="section9_box" id="section9_box3">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.972914584157!2d88.38643837578854!3d22.766386425838963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b0bf14ff8eb%3A0x17d77794063d7817!2sROYAL%20ENFIELD%20ZONE!5e0!3m2!1sen!2sin!4v1709652014084!5m2!1sen!2sin"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer">
-
-    <!-- THIS IS FOOTER BOX 1  -->
-
-    <div class="footer_box" id="footer_box1">
-      <h4 id="footeer_company">
-        Company
-      </h4>
-      <p class="footer_box_para">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-        dapibus leo.
-      </p>
-    </div>
-
-    <!-- THIS IS FOOTER BOX 2  -->
-    <div class="footer_left">
-
-      <div class="footer_box" id="footer_box2">
-        <h4>
-          Service Station
-        </h4>
-        <p class="footer_box_para">
-          Barrackpore Wireless Gate kolkata : 700123
-        </p>
-        <p class="footer_box_para">
-          Monday – Friday:
-          7:30am – 5pm
-        </p>
-        <p>
-          Rupesh singh
-        </p>
-        <a href=""> mailREZ@gmail.com</a>
-
-        <h4>
-          Royal Enfield Zone
-        </h4>
-        <p>
-          Markoos Delly
-        </p>
-        <a href="">mail@mail.mail</a>
-      </div>
-
-
-      <!-- THIS IS FOOTER BOX 3  -->
-
-      <div class="footer_box" id="footer_box3">
-        <h4>Auto Body Shop</h4>
-        <a href="">mail@mail.mail</a>
-
-        <h4>Diagnostics</h4>
-        <a href="">mail2@mail.mail</a>
-      </div>
-    </div>
-
-    <div class="footer_right">
-      <div class="footer_box" id="footer_box4">
-        <h4>Site Map</h4>
-        <div class="footer_box_ancors">
-          <a href="">Home</a>
-          <a href="">About Us</a>
-          <a href="">Service</a>
-          <a href="">Pages</a>
-          <a href="">Contact</a>
-        </div>
-      </div>
-
-      <div class="footer_box" id="footer_box5">
-        <button>
-          Get Your Booking
+        <button class="section1Button" role="button">
+          <a href="contact.html " class="text-decoration-none text-success">
+            get free estimate
+          </a>
         </button>
-        <div class="footer_box_icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </div>
+        <p class="rupesh_da_quote">
+          "We always provide the best quality of work at the best price , your
+          bike our responsibility "
+        </p>
+        <p class="p2" id="rupesh_da">Rupesh Singh ~</p>
+      </div>
+    </section>
 
+    <!-- SECTION 1 ENDS AND SECTION 2 STARTS HERE  -->
+
+    <section class="section section2" id="section2">
+      <div class="section2_box">
+        <img src="images/inspection.png" alt="" class="section2_box_image" />
+        <div class="section2_text_part">
+          <h2 class="headding">Free Inspection</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+            quisquam officiis nobis.
+          </p>
+          <a href="Service.html" class="learn_more"
+            >Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+      <div class="section2_box" id="section2_middle_box">
+        <img src="images/mechanic.png" alt="" class="section2_box_image" />
+        <div class="section2_text_part">
+          <h2 class="headding">Expert Technician</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+            quisquam officiis nobis.
+          </p>
+          <a href="Service.html" class="learn_more"
+            >Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+      <div class="section2_box">
+        <img src="images/customer-care.png" alt="" class="section2_box_image" />
+        <div class="section2_text_part">
+          <h2 class="headding">Customer Support</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+            quisquam officiis nobis.
+          </p>
+          <a href="Service.html" class="learn_more"
+            >Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 ENDS END SECTION 3 STARTS HERE  -->
+
+    <section class="hidden section section3">
+      <!-- SECTION 3 BOX 1 STARTS HERE  -->
+      <div class="section3_box hidden" id="section3_box1">
+        <div class="section3_box_textPart">
+          <h1>20% off on parts</h1>
+          <p class="section3_box_textPart_paragraph">
+            Book your service now and get 20% discount on every purchase , So
+            dont waste time and book your service now
+          </p>
+          <button class="section3_box_textPart_button">
+            <a href="contact.html"> Get now </a>
+          </button>
+        </div>
+      </div>
+      <!-- SECTION 3 BOX 2 STRTS HERE  -->
+
+      <div class="section3_box hidden" id="section3_box2">
+        <div class="section3_box_textPart">
+          <h1>40% off on Labour</h1>
+          <p class="section3_box_textPart_paragraph">
+            Book your service now and get 20% discount on every purchase , So
+            dont waste time and book your service now
+          </p>
+          <button class="section3_box_textPart_button">
+            <a href="contact.html"> Get now </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 ENDS END SECTION 4 STARTS HERE  -->
+
+    <section class="hidden section section4">
+      <h1>Our Services</h1>
+      <p class="section4_paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit
+        orci, condimentum ac diam a, euismod suscipit ante. Pellentesque eget
+        dui neque. Nunc sed aliquet nisl. Sed ac arcu congue, mattis ligula non,
+        fringilla mi.
+      </p>
+    </section>
+
+    <!-- SECTION 4 ENDS END SECTION 5 STARTS HERE  -->
+
+    <section class="section5" id="section5">
+      <div class="section5_hero_box">
+        <div class="section5_box">
+          <img
+            src="images/engine_light_icon.png"
+            alt=""
+            class="section5_box_icon"
+          />
+          <h1 class="section5_box_headdingText">engine light check</h1>
+          <p class="section5_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section5_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section5_box">
+          <img
+            src="images/engine_oil_icon.png"
+            alt=""
+            class="section5_box_icon"
+          />
+          <h1 class="section5_box_headdingText">Lube, Oil & Filter Change</h1>
+          <p class="section5_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section5_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section5_box">
+          <img src="images/brake_icon.png" alt="" class="section5_box_icon" />
+          <h1 class="section5_box_headdingText">Brake Repair</h1>
+          <p class="section5_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section5_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section5_box">
+          <img
+            src="images/suspension_icon.png"
+            alt=""
+            class="section5_box_icon"
+          />
+          <h1 class="section5_box_headdingText">Suspension Repair</h1>
+          <p class="section5_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section5_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section5_box">
+          <img
+            src="images//body_paint_icon.png"
+            alt=""
+            class="section5_box_icon"
+          />
+          <h1 class="section5_box_headdingText">Denting and Painting</h1>
+          <p class="section5_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section5_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section5_box">
+          <img
+            src="images/engine_work_icon.png"
+            alt=""
+            class="section5_box_icon"
+          />
+          <h1 class="section5_box_headdingText">engine work</h1>
+          <p class="section5_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section5_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 ENDS END SECTION 6 STARTS HERE  -->
+    <section class="section6">
+      <h1 class="section6_headding">
+        <img
+          src="images/hand_hold.png"
+          alt="no image"
+          class="section6_animation_wheel"
+        />
+        we also offer
+        <img
+          src="images/hand_hold.png"
+          alt=""
+          class="section6_animation_wheel"
+        />
+      </h1>
+
+      <div class="section6_hero_box">
+        <div class="section6_box">
+          <img src="images/towing_icon.png" alt="" class="section6_box_icon" />
+          <h1 class="section5_box_headdingText">towing service</h1>
+          <p class="section6_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section6_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section6_box">
+          <img
+            src="images/pickup_drop_icon.png"
+            alt=""
+            class="section6_box_icon"
+          />
+          <h1 class="section5_box_headdingText">free pickup & drop</h1>
+          <p class="section6_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section6_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section6_box">
+          <img
+            src="images/wheel_alignment_icon.png"
+            alt=""
+            class="section6_box_icon"
+          />
+          <h1 class="section5_box_headdingText">wheel alignment</h1>
+          <p class="section6_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section6_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section6_box">
+          <img
+            src="images/restoration_icon.png"
+            alt=""
+            class="section6_box_icon"
+          />
+          <h1 class="section5_box_headdingText">restoration</h1>
+          <p class="section6_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section6_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section6_box">
+          <img
+            src="images/insurence_claim_icon.png"
+            alt=""
+            class="section6_box_icon"
+          />
+          <h1 class="section5_box_headdingText">Insurence Claim</h1>
+          <p class="section6_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section6_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+        <div class="section6_box">
+          <img
+            src="images/modification_icon.png"
+            alt=""
+            class="section6_box_icon"
+          />
+          <h1 class="section5_box_headdingText">Modification</h1>
+          <p class="section6_box_paragraphText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="section6_box_viewOffers" href="Service.html"> — view service offers </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 ENDS END SECTION 7 STARTS HERE  -->
+
+    <section class="section7">
+      <div class="section7_hero_box">
+        <img
+          src="images/why_choose_us.jpg"
+          alt=""
+          class="section7_hero_box_image"
+        />
+        <div class="section7_hero_box_textPart">
+          <h1 class="section7_hero_box_textPart_headding">Why Choose Us?</h1>
+          <p class="section7_hero_box_textPart_paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a class="read_more"> — Read More</a>
+        </div>
       </div>
 
-    </div>
+      <div class="number_countPart">
+        <div class="hidden number_countPart_box" id="number_countPart_box1">
+          <h1 class="number_countPart_box_number num" value_count="10" id="1">
+            00
+          </h1>
+          <p class="number_countPart_box_p">Technician and workers</p>
+        </div>
+        <div class="hidden number_countPart_box" id="number_countPart_box2">
+          <h1 class="number_countPart_box_number num" value_count="100" id="2">
+            00
+          </h1>
+          <p class="number_countPart_box_p">Repaired Vehicles</p>
+        </div>
+        <div class="hidden number_countPart_box" id="number_countPart_box3">
+          <h1 class="number_countPart_box_number num" value_count="80" id="3">
+            00
+          </h1>
+          <p class="number_countPart_box_p">Stisfied Customers</p>
+        </div>
+      </div>
+    </section>
 
+    <hr />
 
+    <!-- SECTION 7 ENDS END SECTION 8 STARTS HERE  -->
 
-  </footer>
+    <section class="section8">
+      <div class="section_headding_part">
+        <h1>Read our rider's story</h1>
+        <p>
+          Our customers have some amezing stories with us . some times for our
+          service , some times for our behaviour and some times for our
+          dedication . do you aslo wanna know ? here are some of them ~
+        </p>
+      </div>
 
-  <p class="copyright_section">
-    Copyright © 2024 An Automobile Repair Shop | Designed & developed by @Dipan_Sarkar for your site development and any
-    query <br> about ths website please feel free to contact <a href="">dipansarkar1005@gmail.com</a>
-  </p>
-  <hr>
+      <div class="section8_hero_box">
+        <div class="section8_box" id="section8_box1">
+          <img src="images/testi_1.png" alt="" />
+          <div class="five_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left double_quote" double_quote></i>
+          <p class="testimonial">
+            One stop for all services related to Royal Enfield Great people and
+            staff. They provide best in class service for your Bikes. And one of
+            the best polishing finish. Keep up the great work and kudos to all
+            the members.. cheers…
+          </p>
+          <h3 class="name">Rahul Chakraborty ~</h3>
+        </div>
+        <div class="section8_box" id="section8_box2">
+          <img src="images/testi_2.png" alt="" />
+          <div class="five_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left double_quote"></i>
+          <p class="testimonial">
+            Wonderful experience and a great job by Rupesh da and his team. It
+            was my first time, suggested by one of my friend for my RE TBX 350.
+            The service, behaviour, quality of work was top notch. I highly
+            recommend their services to all fellow Enfield lovers. Thank you
+            again Rupesh da #retbx350❤️
+          </p>
+          <h3 class="name">Abhisek Chakraborty ~</h3>
+        </div>
+        <div class="section8_box" id="section8_box3">
+          <img src="images/testi_3.png" alt="" />
+          <div class="five_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left double_quote"></i>
+          <p class="testimonial">
+            From servicing to accessories, from loyalty to behaviour, this place
+            is perfect for Royal Enfield owners.. From small to big issues of
+            your Royal Enfield can be fixed here.. Rupesh Da and his team are
+            always ready to help.. Wishing more prosperity ❤️
+          </p>
+          <h3 class="name">Tathagata Chatterjee ~</h3>
+        </div>
+        <div class="section8_box" id="section8_box4">
+          <img src="images/testi_4.png" alt="" />
+          <div class="five_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left double_quote"></i>
+          <p class="testimonial">
+            It was my first time after getting suggested by one of my friend,
+            wanted to change my tyres for my Himalayan, and to my shock the
+            service, And all credit goes to Rupesh da and his team. I would
+            really all of you guys to do pay a visit.
+          </p>
+          <h3 class="name">Arunit Tobay ~</h3>
+        </div>
+        <div class="section8_box" id="section8_box5">
+          <img src="images/testi_5.png" alt="" />
+          <div class="five_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left double_quote"></i>
+          <p class="testimonial">
+            Wonderful all round services given to me..With total financial
+            clarity..Mr. Rupesh and team serviced my Thunderbird while I was in
+            Guwahati..It was of immense help to me as I could ride my cruiser
+            during Durga Puja..
+          </p>
+          <h3 class="name">Palash Bhowmik ~</h3>
+        </div>
+        <div class="section8_box" id="section8_box6">
+          <img src="images/testi_6.png" alt="" />
+          <div class="five_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left double_quote"></i>
+          <p class="testimonial">
+            Very good experience I have with first time visited REZ Barrackpur.
+            Actually the Owner Rupesh Sing is very nice person and well
+            knowledgeable. Lets hope this experience will last long with REZ.
+          </p>
+          <h3 class="name">Kuntal Roy ~</h3>
+        </div>
+      </div>
+    </section>
 
+    <!-- SECTION 9 STARTS HERE  -->
+    <hr />
+    <section class="section9">
+      <img src="images/mechanic_man.jpg" alt="" class="section9_hero_image" />
+      <div class="section9_hero_box">
+        <!-- SECTION 9 HERO BOX INNER PART 1 -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="section9_box" id="section9_box1">
+          <div class="section9_box1_part" id="section9_box1_part1">
+            <h1>Free Apointment</h1>
+            <p class="">
+              <i class="fa-solid fa-check"></i> Free Diagnosis & Brake Checks
+            </p>
+            <p class="border_p">
+              <i class="fa-solid fa-check"></i> Expect free call from us
+            </p>
+            <p class="">
+              <i class="fa-solid fa-check"></i> Message with photo and video
+            </p>
+          </div>
+          <div class="section9_box1_part">
+            <h1>Working Hours</h1>
+            <p class="">
+              <i aria-hidden="true" class="fas fa-calendar-day"></i> Friday –
+              Wednesday: 8:30am – pm
+            </p>
+            <p class="border_p">
+              <i aria-hidden="true" class="fas fa-calendar-day"></i> Saturday :
+              Full Day Off
+            </p>
+            <p class="">
+              <i aria-hidden="true" class="far fa-bell"></i> Emergency : 24Hr /
+              7Days
+            </p>
+          </div>
+        </div>
+        <!-- SECTION 9 HERO BOX INNER PART 2 -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/11a9790664.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-</body>
+        <div class="section9_box" id="section9_box2">
+          <h1>The Office</h1>
+          <p class="">
+            <span
+              ><i aria-hidden="true" class="far fa-address-book"></i>
+              Address:</span
+            >Barrackpore Wireless Gate kolkata : 700123
+          </p>
+          <p class="border_p2">
+            <span
+              ><i aria-hidden="true" class="fas fa-phone-alt"></i> Phone:</span
+            >
+            7003781708
+          </p>
+          <p class="">
+            <span
+              ><i aria-hidden="true" class="fas fa-mail-bulk"></i> Email:</span
+            >
+            mailREZ@gmail.com
+          </p>
+        </div>
 
+        <!-- SECTION 9 HERO BOX INNER PART 3 -->
+
+        <div class="section9_box" id="section9_box3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.972914584157!2d88.38643837578854!3d22.766386425838963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b0bf14ff8eb%3A0x17d77794063d7817!2sROYAL%20ENFIELD%20ZONE!5e0!3m2!1sen!2sin!4v1709652014084!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER SECTION STARTS HERE -->
+
+    <footer class="footer">
+      <!-- THIS IS FOOTER BOX 1  -->
+
+      <div class="footer_box" id="footer_box1">
+        <h4 id="footeer_company">Company</h4>
+        <p class="footer_box_para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+
+      <!-- THIS IS FOOTER BOX 2  -->
+      <div class="footer_left">
+        <div class="footer_box" id="footer_box2">
+          <h4>Service Station</h4>
+          <p class="footer_box_para">
+            Barrackpore Wireless Gate kolkata : 700123
+          </p>
+          <p class="footer_box_para">Monday – Friday: 7:30am – 5pm</p>
+          <p>Rupesh singh</p>
+          <a href=""> mailREZ@gmail.com</a>
+
+          <h4>Royal Enfield Zone</h4>
+          <p>Markoos Delly</p>
+          <a href="">mail@mail.mail</a>
+        </div>
+
+        <!-- THIS IS FOOTER BOX 3  -->
+
+        <div class="footer_box" id="footer_box3">
+          <h4>Auto Body Shop</h4>
+          <a href="">mail@mail.mail</a>
+
+          <h4>Diagnostics</h4>
+          <a href="">mail2@mail.mail</a>
+        </div>
+      </div>
+
+      <div class="footer_right">
+        <div class="footer_box" id="footer_box4">
+          <h4>Site Map</h4>
+          <div class="footer_box_ancors">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Service</a>
+            <a href="">Pages</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer_box" id="footer_box5">
+          <button>
+            <a href="contact.html">Get Your Booking</a>
+          </button>
+          <div class="footer_box_icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p class="copyright_section">
+      Copyright © 2024 An Automobile Repair Shop | Designed & developed by
+      @Dipan_Sarkar for your site development and any query <br />
+      about ths website please feel free to contact
+      <a href="">dipansarkar1005@gmail.com</a>
+    </p>
+    <hr />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/11a9790664.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
