@@ -11,6 +11,12 @@
   --border_grey: #dddddd;
   --paragraph_font: "Dosis", sans-serif;
 }
+body {
+  scroll-behavior: smooth;
+}
+* {
+  scroll-behavior: smooth;
+}
 
 .we_section1 {
   width: 100vw;
@@ -226,10 +232,10 @@
 
 .ridingLogo {
   width: 10rem;
-  /* filter: grayscale(100%); */
-  /* -webkit-filter: grayscale(100%); */
   max-width: 100%;
-  mix-blend-mode:luminosity;
+  mix-blend-mode: luminosity;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 .ridingLogo:hover {
   width: 10rem;
@@ -250,9 +256,6 @@
   }
   .we_Section4_content {
     flex-direction: column;
-  }
-  .ourStory_description {
-    /* padding-bottom: 3rem; */
   }
 }
 @media only screen and (max-width: 768px) {

@@ -6,12 +6,9 @@
     outline: black;
     text-shadow:  0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04); */
   margin-bottom: 4rem;
+  line-height: 0.8;
 }
-main {
-  width: 100vw;
-  /* background-color:#EEE2D0; */
-  min-height: 80vh;
-}
+
 .contact_Section {
   padding: 3rem;
   /* background-color: red; */
@@ -29,7 +26,7 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 250px;
+  width: 120%;
   height: 0.7rem;
 }
 
@@ -94,5 +91,18 @@ main {
   }
   .section9_box1_part {
     border-right: 0px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .contact_Headding{
+
+font-size: 5.5rem;
+margin-bottom: 2rem;
+
+  }
+
+  .contact_Section {
+    padding: 1rem;
   }
 }
